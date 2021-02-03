@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<!--
+Tema: Web Storage - Ejercicio de Login y Logout
+Alumno: Mamen Arias de Haro
+Fecha: 26 de enero de 2021
+-->
+
+<head>
+  <title>Ejercicio de Login y Logout</title>
+  <meta charset="UTF-8"/>  
+  <link rel=StyleSheet href="26ene-1DAM-login.css" type="text/css"> 
+</head>
+
+
+<body>
+	<div id="contenido">
+		<div id="izquierda">
+			<p class="bnv">Introduce tu nombre:</p>
+			<form name="miFormulario" onSubmit="return ingresar()">
+				<input id="boton" type="text" id="usr" name="usuario" maxlength="10" required><br><br>
+				<input id="boton" type="submit" value="Entrar">
+			</form>
+			   <br>	
+		</div>
+		<div id="centro">
+			<p class="texto"> DESARROLLO DE APLICACIONES MULTIPLATAFORMA <br> Mª Carmen Arias de Haro</p>
+		</div>
+		<div id="derecha">
+			<img src="cenec-malaga.png" alt="Cenec Málaga">
+		</div>
+	</div>
+
+<script>
+	function ingresar(){
+		if (typeof(Storage) !== "undefined") {
+		  // Almacena un valor usando el método setItem del objeto localStorage
+		  var x=document.forms["miFormulario"]["usuario"].value;
+		  sessionStorage.setItem("usuario", x);
+		} else {
+		  window.alert("Este navegador no soporta web storage...");
+		}
+		window.location.replace("26ene-1DAM-logout.html")
+		return false;
+	}
+</script>
+</body>
+</html>
+
+
+

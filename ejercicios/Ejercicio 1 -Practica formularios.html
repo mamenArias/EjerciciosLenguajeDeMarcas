@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<!-- 
+Fecha: 12 de enero de 2021
+Alumno: Mª Carmen Arias de Haro
+Asignatura: Lenguaje de Marcas
+Práctica de formularios-->
+
+<head>
+<meta charset=UTF-8 />
+<title>Prática de validación de formularios</title>
+</head>
+
+<body>
+<h1> Formulario:</h1>
+<form action="Ejercicio1-practicaFormularios.js">
+    <label for="nombre">Nombre:</label> <!-- Esta etiqueta es para ordenar el contenido para indicar que está relacionada con el campo input.
+    Se puede usar otras etiquetas como span, y seguiría funcionando igual -->
+    <input type="text" id="nombre" name="nombre" maxlength="30" required><br><br> <!-- Este va a ser el campo donde vamos a tener que introducir el nombre, podemos hacerlo obligatorio con la etiqueta required -->
+    <label for="apellido">Apellidos:</label>
+    <input type="text" id="apellido" name="apellido" maxlength="30" required><br><br> <!-- El máximo de la longitud de texto permitida en nombre y apellido será de 30 caracteres-->
+    <label for="edad">Edad:</label>
+    <input type="number" id="edad" name="edad" value="18" min="18" max="120" required><br><br> <!-- Con este campo vamos a pedir la edad, mínimo será 18 y máximo 120-->
+    <label for="fechaNacim">Fecha de nacimiento:</label>
+    <input type="date" id="fechaNacim" name="fechaNacim" min="1900-01-01" max="2004-12-31"><br><br> <!-- Aquí vamos a pedir la fecha de nacimiento, y nos saldrá un calendario cuando hagamos click para seleccionarla
+    Además, también la estamos validando para que no salgan valores raros.-->
+    <label for="color">Color favorito:</label>
+    <input type="color" id="color" name="color"><br><br>
+    <input type="submit" onclick="enviar()" value="Enviar">
+</form>
+
+</body>
+
+<script>
+    function enviar(){
+        alert("¡Recibido!");
+    }
+</script>
+</html>

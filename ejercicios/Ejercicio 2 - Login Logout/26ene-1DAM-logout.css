@@ -1,0 +1,66 @@
+/*
+Tema: Web Storage - localstorage y sessionstorage 
+Alumno: Mamen Arias de Haro
+Fecha: 26 de enero de 2021
+*/
+
+body{
+    background-color: gainsboro;
+    background-image: url("computer-1245714_1920.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#boton{
+    float: right;
+}
+
+.bnv{
+    text-align: right;
+    font-weight: bold;
+}
+
+.texto{
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+#izquierda{
+    background-color: lightblue;
+    width: 20%;
+    border:solid;
+    border-color: #6293C9;
+}
+
+#izquierda img{
+    width: 100%;
+    height: auto;
+}
+
+#derecha img{
+    width: 100%;
+    height: auto;
+}
+
+#centro{
+    background-color: lightpink;
+    width: 60%;
+    border:solid;
+    border-color: #E063AA;
+}
+
+#derecha{
+    background-color: lightgreen;
+    width: 20%;
+    border: solid 3px;
+    border-color: #407213;
+    padding: 5px;
+}
+
+#contenido{
+    display: flex;
+    height: 25%;
+}
