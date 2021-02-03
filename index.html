@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<!--
+web o pagina:
+alumno:
+fecha:
+-->
+
+<head>
+    <title>Titulo en Etiqueta del Navegador</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="00-modelo.css" />
+    <style>
+        * {
+            box-sizing: border-box;
+            /*Con esto le estamos diciendo al navegador que siempre tenga en cuenta los márgenes
+			cuando le estemos dando estilo responsive al resto de divs*/
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        #dext {
+            display: flex;
+            background-color: lightgrey;
+        }
+        
+        #di {
+            background-color: rgb(255, 0, 0, 0.5);
+        }
+        
+        #dc {
+            background-color: rgb(0, 255, 0, 0.5);
+            /*padding-left: 10px;*/
+        }
+        
+        #dd {
+            background-color: rgb(0, 0, 255, 0.5);
+        }
+        
+        #di,
+        #dc,
+        #dd {
+            width: 33.33%;
+            min-height: 40px;
+        }
+        
+        @media screen and (max-width: 600px) {
+            #dext {
+                display: block;
+            }
+            #di,
+            #dc,
+            #dd {
+                width: 100%;
+            }
+        }
+    </style>
+
+</head>
+
+
+<body>
+    <div id="dext">
+        <!--Renglón 1 - ROW1-->
+        <div id="di">texto izquierdo</div>
+        <div id="dc">el texto del centro es más largo y por eso vamos a seguir escribiendo para ver si esta mierda funciona
+        </div>
+        <div id="dd">texto derecho</div>
+    </div>
+
+
+</body>
+
+</html>
