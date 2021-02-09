@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<!--
+HTML
+web o pagina:
+autor: Mamen Arias
+fecha: 9 de febrero de 2021
+-->
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- importante SEO para la etiqueta del navegador -->
+    <title>Position CSS</title>
+
+    <!-- una fuente de Google -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet" />
+
+    <!-- una hoja de estilos externa-->
+
+    <!-- una hoja de estilos personalizada-->
+    <link href="00-modelo.css" rel="stylesheet" />
+
+    <!-- iconos u otros elementos externos -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+
+    <!-- solo aquellos estilos que solo aplican a esta pagina -->
+    <style>
+        body {
+            background: rgba(0, 0, 128, 0.1)
+            /* Azul al 10% */
+        }
+        
+        .pos-static {
+            background-color: yellow;
+            position: static;
+            left: 50px;
+            top: 50px;
+            /*Static es el normal que se aplica por defecto*/
+        }
+        
+        .pos-relative {
+            background-color: yellow;
+            position: relative;
+            left: 50px;
+            top: 50px;
+            /*Se comporta como display block. Se queda fijo a partir de la posición original*/
+        }
+        
+        .pos-absolute {
+            background-color: yellow;
+            position: absolute;
+            left: 50px;
+            top: 60px;
+            /*Ajusta el ancho del elemento al contenido. Cambia el punto de referencia al primero de la página: el body (esquina superior izq)*/
+        }
+        
+        .pos-fixed {
+            background-color: yellow;
+            position: fixed;
+            right: 50px;
+            top: 60px;
+            /*Se queda fijo en un mismo punto de la página, aunque se haga scroll*/
+        }
+        
+        .pos-sticky {
+            background-color: yellow;
+            position: sticky;
+            right: 50px;
+            top: 0px;
+            /*Se queda fijo mientras queda dentro de la pantalla, pero al hacer scroll, cuando se va a quedar fuera de la vista, se mueve y se queda visible*/
+        }
+        
+        #ancestro {
+            background-color: rgba(255, 0, 0, 0.1);
+            position: relative;
+            left: 0px;
+            top: 20px;
+        }
+        
+        #hijo {
+            background-color: yellow;
+            position: absolute;
+            left: 20px;
+            top: 250px;
+            text-align: right;
+        }
+    </style>
+
+    <!-- scripts externos de librerias que usaremos, por ejemplo Bootstrap o JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- scripts externos de desarrollo propio en Javascript o JQuery -->
+    <script src="00-modelo.js"></script>
+
+    <!-- scripts personalizados Javascript o JQuery -->
+    <script>
+        // aqui el codigo ...
+    </script>
+</head>
+
+
+<body>
+
+    <!-- cabecera de pagina -->
+    <header>
+        <h1>CSS POSITION:</h1>
+        <h2>ABSOLUTE</h2>
+        <br />
+    </header>
+
+    <div id="ancestro">
+        <p>Un párrafo de texto largo para que no quede corto</p>
+        <p>Un párrafo de texto largo para que no quede corto</p>
+        <p>Un párrafo de texto largo para que no quede corto</p>
+        <p>Un párrafo de texto largo para que no quede corto</p>
+        <p>Un párrafo de texto largo para que no quede corto</p>
+        <div id="hijo">
+            <p>(1) Un párrafo de texto largo para que no quede corto</p>
+            <p>(2)Un párrafo de texto largo para que no quede corto</p>
+            <p>(3)Un párrafo de texto largo para que no quede corto</p>
+        </div>
+        <p>Un párrafo de texto largo para que no quede corto</p>
+        <p>Un párrafo de texto largo para que no quede corto</p>
+        <p>Un párrafo de texto largo para que no quede corto</p>
+        <p>Un párrafo de texto largo para que no quede corto</p>
+        <p>Un párrafo de texto largo para que no quede corto</p>
+        <p>Un párrafo de texto largo para que no quede corto</p>
+        <p>Un párrafo de texto largo para que no quede corto</p>
+        <p>Un párrafo de texto largo para que no quede corto</p>
+        <p>Un párrafo de texto largo para que no quede corto</p>
+        <p>Un párrafo de texto largo para que no quede corto</p>
+        <p>Un párrafo de texto largo para que no quede corto</p>
+        <p>Un párrafo de texto largo para que no quede corto</p>
+        <p>Un párrafo de texto largo para que no quede corto</p>
+        <p>Un párrafo de texto largo para que no quede corto</p>
+        <p>Un párrafo de texto largo para que no quede corto</p>
+        <p>Un párrafo de texto largo para que no quede corto</p>
+        <p>Un párrafo de texto largo para que no quede corto</p>
+        <p>Un párrafo de texto largo para que no quede corto</p>
+
+    </div>
+
+
+
+
+
+    <!-- bloque de contenido de la pagina -->
+    <main>
+
+    </main>
+
+
+    <!-- pie de pagina -->
+    <footer>
+        <br /><br /><br />
+        <div>&copy; 2021 <a href="https://mamenarias.github.io/publico/" target="_blank">Mª Carmen Arias de Haro</a>
+        </div>
+    </footer>
+
+    <script>
+        // seccion de codigo javascript
+    </script>
+</body>
+
+</html>
