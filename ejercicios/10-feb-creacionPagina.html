@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<!--
+web o pagina: Creación página web
+alumno: Mamen Arias
+fecha: 10 de febrero de 2021
+-->
+
+<head>
+    <title>Página web con menú</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="00-modelo.css" />
+    <style>
+        * {
+            margin: 0px;
+        }
+        
+        body {
+            background: rgba(0, 0, 128, 0.1);
+            overflow-x: hidden;
+            overflow-y: hidden;
+        }
+        
+        a {
+            color: antiquewhite;
+        }
+        
+        .header {
+            background-color: #262020;
+            padding: 2%;
+            font-size: small;
+            color: white;
+            position: static;
+            width: 98%;
+            height: 20%;
+        }
+        
+        .enlace {
+            margin-top: 0%;
+        }
+        
+        .tituloMenu {
+            text-align: center;
+            font-size: larger;
+            font-family: Verdana;
+        }
+        
+        .menu {
+            background-color: aliceblue;
+            border-right: solid;
+            border-color: #262020;
+            position: fixed;
+            height: 100%;
+            width: 20%;
+            margin: 0px;
+        }
+        
+        .menu ul {
+            margin: 10px;
+            overflow-y: auto;
+            overflow-x: hidden;
+            height: 88%;
+            padding: 0;
+        }
+        
+        .menu li {
+            list-style: none;
+            border-bottom: 1px solid;
+            color: #262020;
+            position: relative;
+            margin-top: 30px;
+            margin-left: 10px;
+            width: 100%;
+            font-size: medium;
+        }
+        
+        .documento {
+            position: absolute;
+            text-align: justify;
+            left: 20%;
+            height: 80%;
+            width: auto;
+            margin-left: 0px;
+            overflow-y: scroll;
+            padding: 2%;
+            padding-right: 20px;
+        }
+        
+        .img {
+            float: right;
+            margin: 20px;
+            width: 15%;
+            height: auto;
+            object-fit: cover;
+        }
+        
+        .img2 {
+            float: left;
+            clear: right;
+            margin: 20px;
+            width: 15%;
+            height: auto;
+            object-fit: cover;
+        }
+        
+        @media only screen and (max-width: 815px) {
+            /* For mobile phones: */
+            .header {
+                display: block;
+            }
+            .menu ul {
+                border: 1px solid;
+                height: 207px;
+            }
+            .menu {
+                background-color: aliceblue;
+                position: relative;
+                top: 0;
+                padding: 0;
+                margin: 0;
+                width: 100%;
+                max-height: 275px;
+                border: none;
+                border-bottom: 2px solid;
+            }
+            body {
+                overflow-y: scroll;
+            }
+            .documento {
+                margin-top: 20px;
+                text-align: justify;
+                height: auto;
+                width: auto;
+                margin-left: -15%;
+                overflow-y: hidden;
+            }
+        }
+    </style>
+
+</head>
+
+
+<body>
+    <header>
+        <div class="header">
+            <h1>FCC: Technical Documentation Page</h1>
+            <p class="enlace"><a href="https://codepen.io/freeCodeCamp">freeCodeCamp.org</a></p>
+        </div>
+
+    </header>
+
+
+
+    <div class="menu">
+        <header class="tituloMenu">AVES</header>
+        <ul>
+            <li>Introducción</li>
+            <li>Especies</li>
+            <li>Otros</li>
+            <li>Introducción</li>
+            <li>Especies</li>
+            <li>Otros</li>
+            <li>Introducción</li>
+            <li>Especies</li>
+            <li>Otros</li>
+            <li>Introducción</li>
+            <li>Especies</li>
+            <li>Otros</li>
+            <li>Introducción</li>
+            <li>Especies</li>
+            <li>Otros</li>
+            <li>Introducción</li>
+            <li>Especies</li>
+            <li>Otros</li>
+
+        </ul>
+    </div>
+
+    <main class="documento">
+        <div class="derecha">
+            <header>El Cóndor</header><br>
+            <article>
+                <img class="img" src="../media/condor.jpg">
+                <img class="img2" src="../media/condor2.jpg">
+                <p>El cóndor andino, también cóndor de los Cerros, cóndor de los Andes, o simplemente cóndor (Vultur gryphus)​ es una especie de ave de la familia Cathartidae que habita en América del Sur. El orden al que pertenece su familia se encuentra
+                    en disputa. Se extiende por la cordillera de los Andes, cordilleras próximas a ella y las costas adyacentes de los océanos Pacífico y Atlántico. Es el ave no marina de mayor envergadura del planeta,​ no posee subespecies4 y su nombre
+                    procede del quechua kuntur.
+                </p><br>
+
+                <p>Es un ave grande y negra, con plumas blancas alrededor del cuello y en partes de las alas. La cabeza carece de plumas y es de color rojo, pudiendo cambiar de tonalidad de acuerdo con el estado emocional del ave. A diferencia de la mayor
+                    parte de las aves de presa, el macho es mayor que la hembra.</p><br>
+
+                <p>Es un ave carroñera. Alcanza la madurez sexual a los cinco o seis años de edad y anida entre los 1000 y 5000 m s. n. m., generalmente en formaciones rocosas inaccesibles. Posee una tasa de reproducción muy baja; se espera que al menos
+                    ponga un huevo cada dos años. Es una de las aves más longevas, pudiendo alcanzar la edad de setenta y cinco años en cautiverio.
+                </p><br>
+
+                <p>Es un símbolo nacional de Argentina, Bolivia, Chile, Colombia, Ecuador, Perú, teniendo un importante rol en el folclore y la mitología de las regiones andinas de Sudamérica. Ha sido declarado como el ave nacional de Ecuador desde su aparición
+                    en el escudo nacional, en 1834, además de ser declarado ave insigne en otros países como Argentina: en la provincia de Mendoza, donde se le otorga el título de "monumento natural provincial" mediante la ley n.º 6599 sancionada el 12
+                    de mayo de 1998, lo mismo que la provincia de Santa Cruz mediante la ley n.º 2916 sancionada el 24 de agosto de 2006,​ mientras que la provincia de Tierra del Fuego lo declaró patrimonio natural mediante la ley n.º 558 sancionada el
+                    19 de septiembre de 2002;9 y siendo el caso más reciente en Chile, que mediante decreto del 30 de junio de 2006 le ha otorgado también el título de monumento natural de Chile.</p><br>
+
+                <p>La Unión Internacional para la Conservación de la Naturaleza la cataloga como una especie vulnerable, ya que sufre la pérdida de su hábitat y el envenenamiento por la ingesta de animales intoxicados o de los propios cebos envenenados colocados
+                    ilegalmente por cazadores y ganaderos. Varios países iniciaron programas de reproducción en cautividad.
+                </p><br>
+
+                <p>Es considerada como un patrimonio cultural y natural de Sudamérica.</p><br>
+
+                <p>El cóndor andino es reconocido como una de las aves voladoras más grandes del planeta, llegando en ocasiones a ser superado en envergadura solamente por el albatros viajero y el real,12​ si bien el cóndor es más alto, más robusto y más
+                    pesado que aquellos. Los adultos llegan a medir hasta 142 cm de longitud (desde el pico a la punta de la cola) y 1 metro de estatura, y de 270 hasta 330 cm de envergadura,13​14​ con una media de 283 cm,15​ y pesan de 11 a 15 kg los
+                    machos y de 8 a 11 kg las hembras. Poseen la cabeza desnuda, de color generalmente rojizo, aunque el mismo puede cambiar según el estado de ánimo del animal; pico de borde muy cortante y terminado en gancho. Las alas son largas y anchas,
+                    y las patas, no prensiles, poseen uñas cortas y poco curvas, y con la inserción del dedo posterior elevada. Las mismas están adaptadas para la marcha y para la sujeción de la carroña. Alcanzan la madurez sexual aproximadamente a los
+                    8 años. El plumaje juvenil de ambos sexos es de color marrón hasta alcanzar en mudas sucesivas el característico plumaje negro-azabache de los adultos. Una ancha banda blanca resalta en el dorso de las alas y un nítido collar blanco
+                    no completamente cerrado al frente, protege la desnuda piel del cuello.</p><br>
+
+                <p>Los machos presentan una cresta o carúncula y pliegues en la cara y cuello que aumentan de tamaño con la edad. Alcanzan mayor peso y envergadura que las hembras y sus ojos son de color café. Las hembras no poseen cresta aunque al igual
+                    que los machos presentan pliegues.16​ Sus ojos son de color rojizo.</p><br>
+
+                <p>Es también una de las aves que vuela a mayores alturas, el cóndor andino puede volar utilizando las corrientes térmicas ascendentes verticales de aire cálido y pueden alcanzar hasta los 6500 metros de altitud;17​ luego puede planear por
+                    cientos de kilómetros casi sin mover las alas extendidas, el cóndor consume muy poca energía y merced a su denso plumaje puede soportar climas gélidos.</p><br>
+
+                <p>Los cóndores son prácticamente mudos al tener atrofiada la siringe.</p><br>
+            </article>
+        </div>
+
+    </main>
+
+</body>
+
+</html>
