@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: gainsboro;
+    background-image: url("https://images.nintendolife.com/d5fc3c2675ad3/large.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.marco {
+    display: grid;
+    grid-template-columns: 250px auto;
+    grid-template-rows: 200px 0px auto 0px;
+    grid-gap: 0px;
+    width: 100vw;
+    height: 100vh;
+}
+
+.encabezado {
+    border-style: hidden;
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 1;
+    background-color: #FFCE29;
+}
+
+.logo {
+    margin: auto;
+    height: auto;
+    width: 200px;
+    margin-left: 42%;
+}
+
+.menu {
+    overflow: hidden;
+    height: 100%;
+    text-align: center;
+}
+
+.menu ul {
+    list-style: none;
+    display: inline-block;
+    padding: 20px;
+    padding-top: 0px;
+}
+
+.menu ul li {
+    float: left;
+    margin-top: 20px;
+}
+
+.menu ul li a {
+    float: left;
+    font-size: 16px;
+    font-family: Georgia;
+    color: black;
+    text-align: center;
+    padding-top: 20%;
+    padding: 14px 16px;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+.menu ul li a:hover {
+    background-color: white;
+    height: 100%;
+}
+
+a:active {
+    background-color: white;
+    color: rgb(182, 53, 182);
+}
+
+.activo {
+    background-color: white;
+    color: rgb(182, 53, 182);
+    height: 100%;
+}
+
+.lado {
+    border-style: solid;
+    border-color: violet;
+    grid-column: 1 / span 1;
+    grid-row: 3 / span 1;
+}
+
+.contenido {
+    border-style: solid;
+    border-color: violet;
+    grid-column: 2 / span 1;
+    grid-row: 3 / span 1;
+}
+
+
+/*.pie {
+    border-style: solid;
+    border-color: aqua;
+    grid-column: 1 / span 2;
+    grid-row: 4 / span 1;
+}*/
