@@ -92,6 +92,34 @@ a:active {
     grid-row: 3 / span 1;
     background-image: url(../media/fondolateral.jpg);
     border-radius: 20px;
+    padding-top: 50%;
+    padding-bottom: 25%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+summary {
+    background-color: #FFF6CC;
+    font-size: 16px;
+    font-family: Georgia;
+    font-weight: bolder;
+    padding: 3%;
+    text-align: center;
+    list-style: none;
+    border-radius: 15px;
+    margin: 10px;
+    outline: none;
+}
+
+li {
+    font-family: Georgia;
+    text-align: center;
+    text-decoration: none;
+}
+
+.icono {
+    width: 15px;
+    height: auto;
 }
 
 .contenido {
@@ -102,11 +130,3 @@ a:active {
     opacity: 0.8;
     border-radius: 20px;
 }
-
-
-/*.pie {
-    border-style: solid;
-    border-color: aqua;
-    grid-column: 1 / span 2;
-    grid-row: 4 / span 1;
-}*/
