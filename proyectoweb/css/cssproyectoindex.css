@@ -14,7 +14,7 @@ body {
 .marco {
     display: grid;
     grid-template-columns: 250px auto;
-    grid-template-rows: 205px 0px auto 0px;
+    grid-template-rows: 207px 0px auto 0px;
     grid-gap: 0px;
     width: 100vw;
     height: 100vh;
@@ -39,6 +39,7 @@ body {
     height: auto;
     text-align: center;
     background-color: #FFCE29;
+    border-radius: 20px;
 }
 
 .menu ul {
@@ -86,8 +87,9 @@ a:active {
 }
 
 .contenido {
-    border-style: solid;
-    border-color: violet;
+    border-style: hidden;
     grid-column: 1 / span 2;
     grid-row: 3 / span 1;
+    background-color: #C0F0E9;
+    border-radius: 20px;
 }
