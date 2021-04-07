@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@300&family=New+Tegomin&display=swap');
 * {
     box-sizing: border-box;
     padding: 0;
@@ -6,7 +8,7 @@
 
 body {
     background-color: gainsboro;
-    background-image: url("https://images.nintendolife.com/d5fc3c2675ad3/large.jpg");
+    background-image: url("../media/fondo.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -14,7 +16,7 @@ body {
 .marco {
     display: grid;
     grid-template-columns: 250px auto;
-    grid-template-rows: 207px 0px auto 0px;
+    grid-template-rows: 213px 0px auto 0px;
     grid-gap: 0px;
     width: 100vw;
     height: 100vh;
@@ -57,8 +59,8 @@ body {
 
 .menu ul li a {
     float: left;
-    font-size: 16px;
-    font-family: Georgia;
+    font-size: 20px;
+    font-family: 'Londrina Solid', cursive;
     color: black;
     text-align: center;
     /*padding-top: 20%;*/
@@ -98,10 +100,18 @@ a:active {
     overflow-x: hidden;
 }
 
+details:hover {
+    cursor: pointer;
+}
+
+details summary ul li {
+    text-decoration: none;
+}
+
 summary {
     background-color: #FFF6CC;
-    font-size: 16px;
-    font-family: Georgia;
+    font-size: 20px;
+    font-family: 'New Tegomin', serif;
     font-weight: bolder;
     padding: 3%;
     text-align: center;
@@ -111,9 +121,10 @@ summary {
     outline: none;
 }
 
-li {
-    font-family: Georgia;
+ul {
+    font-family: 'New Tegomin', serif;
     text-align: center;
+    text-shadow: #FFF6CC;
     text-decoration: none;
 }
 
@@ -127,6 +138,62 @@ li {
     grid-column: 2 / span 1;
     grid-row: 3 / span 1;
     background-color: #C0F0E9;
-    opacity: 0.8;
+    opacity: 0.9;
     border-radius: 20px;
+    padding: 3%;
+    text-align: justify;
+    line-height: 1.5em;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.listasContenido {
+    margin-left: 2em;
+    list-style: circle;
+}
+
+.listasContenido li {
+    text-align: left;
+}
+
+h2 {
+    font-family: 'New Tegomin', serif;
+    font-size: 22px;
+    font-weight: bolder;
+}
+
+p {
+    font-family: 'New Tegomin', serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.fotocerezo {
+    width: 600px;
+    height: auto;
+    float: right;
+    margin: 15px;
+    vertical-align: middle;
+    border-radius: 20px;
+    object-fit: contain;
+}
+
+.fotohuevos {
+    width: 400px;
+    height: auto;
+    float: left;
+    margin-right: 40px;
+    vertical-align: middle;
+    border-radius: 20px;
+    object-fit: contain;
+}
+
+.fotocaza {
+    width: 500px;
+    height: auto;
+    margin: 15px;
+    float: right;
+    vertical-align: auto;
+    border-radius: 20px;
+    object-fit: contain;
 }
