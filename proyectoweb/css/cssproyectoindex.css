@@ -8,7 +8,7 @@
 
 body {
     background-color: gainsboro;
-    background-image: url("https://images.nintendolife.com/d5fc3c2675ad3/large.jpg");
+    background-image: url("../media/fondo.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -94,4 +94,5 @@ a:active {
     grid-row: 3 / span 1;
     background-color: #C0F0E9;
     border-radius: 20px;
+    opacity: 0.9;
 }
