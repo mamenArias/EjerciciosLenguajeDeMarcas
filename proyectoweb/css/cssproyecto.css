@@ -1,10 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@300&family=New+Tegomin&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
-
-/*'Acme', sans-serif;*/
-
-@import url('https://fonts.googleapis.com/css2?family=Neucha&display=swap');
 * {
     box-sizing: border-box;
     padding: 0;
@@ -152,7 +148,7 @@ summary {
 }
 
 .listasContenido {
-    font-family: 'Neucha', cursive;
+    font-family: 'Acme', sans-serif;
     margin-left: 2em;
     list-style: circle;
     font-size: 18px;
@@ -163,13 +159,13 @@ summary {
 }
 
 h2 {
-    font-family: 'Neucha', cursive;
+    font-family: 'Acme', sans-serif;
     font-size: 26px;
     font-weight: bolder;
 }
 
 p {
-    font-family: 'Neucha', cursive;
+    font-family: 'Acme', sans-serif;
     font-size: 18px;
 }
 
@@ -185,6 +181,7 @@ p {
     vertical-align: middle;
     border-radius: 20px;
     object-fit: contain;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.45);
 }
 
 .fotohuevos {
@@ -196,6 +193,7 @@ p {
     vertical-align: middle;
     border-radius: 20px;
     object-fit: contain;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.45);
 }
 
 .fotocaza {
@@ -206,4 +204,5 @@ p {
     vertical-align: auto;
     border-radius: 20px;
     object-fit: contain;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.45);
 }
