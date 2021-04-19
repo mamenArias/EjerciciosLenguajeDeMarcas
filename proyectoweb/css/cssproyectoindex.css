@@ -292,7 +292,7 @@
                     margin-left: 35%;
                 }
                 .menu_bar {
-                    display: flex;
+                    display: block;
                     width: 75px;
                     position: fixed;
                     top: 25%;
