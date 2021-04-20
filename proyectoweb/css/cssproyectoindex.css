@@ -17,7 +17,7 @@
             .marco {
                 display: grid;
                 grid-template-columns: 250px auto;
-                grid-template-rows: 213px 0px auto 0px;
+                grid-template-rows: 209px 0px auto 0px;
                 grid-gap: 0px;
                 width: 100vw;
                 height: 100vh;
@@ -57,19 +57,19 @@
             
             .menu ul {
                 list-style: none;
-                display: inline-block;
                 padding: 20px;
                 padding-top: 0px;
                 padding-bottom: 0px;
             }
             
             .menu ul li {
-                float: left;
                 margin: 10px;
+                display: inline-block;
+                position: relative;
             }
             
             .menu ul li a {
-                float: left;
+                display: block;
                 font-size: 20px;
                 font-family: 'Londrina Solid', cursive;
                 color: black;
@@ -85,6 +85,7 @@
                 height: 100%;
                 color: #C75A00;
                 font-size: 1.5em;
+                padding: 11px 13px;
             }
             
             a:active {
