@@ -24,7 +24,7 @@ body {
 }
 
 .encabezado {
-    border-style: hidden;
+    border-style: none;
     grid-column: 1 / span 2;
     grid-row: 1 / span 1;
     height: auto;
@@ -35,6 +35,10 @@ body {
     width: 200px;
     height: auto;
     margin-left: 42%;
+}
+
+.menu_bar {
+    display: none;
 }
 
 .menu {
@@ -64,7 +68,6 @@ body {
     font-family: 'Londrina Solid', cursive;
     color: black;
     text-align: center;
-    /*padding-top: 20%;*/
     padding: 14px 16px;
     font-weight: bolder;
     text-decoration: none;
@@ -74,18 +77,18 @@ body {
     background-color: white;
     border-radius: 15px;
     height: 100%;
+    color: #C75A00;
+    font-size: 1.5em;
 }
 
 a:active {
     background-color: white;
     border-radius: 15px;
-    color: rgb(182, 53, 182);
 }
 
 .activo {
     background-color: white;
     border-radius: 15px;
-    color: rgb(182, 53, 182);
     height: 100%;
 }
 
@@ -105,7 +108,7 @@ details:hover {
     cursor: pointer;
 }
 
-details summary ul li {
+.lado details summary ul li {
     text-decoration: none;
 }
 

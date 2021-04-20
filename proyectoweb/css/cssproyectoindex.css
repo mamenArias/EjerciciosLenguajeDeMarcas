@@ -74,7 +74,6 @@
                 font-family: 'Londrina Solid', cursive;
                 color: black;
                 text-align: center;
-                /*padding-top: 20%;*/
                 padding: 14px 16px;
                 font-weight: bolder;
                 text-decoration: none;
@@ -84,18 +83,18 @@
                 background-color: white;
                 border-radius: 15px;
                 height: 100%;
+                color: #C75A00;
+                font-size: 1.5em;
             }
             
             a:active {
                 background-color: white;
                 border-radius: 15px;
-                color: rgb(182, 53, 182);
             }
             
             .activo {
                 background-color: white;
                 border-radius: 15px;
-                color: rgb(182, 53, 182);
                 height: 100%;
             }
             
@@ -267,7 +266,7 @@
                 font-size: 20px;
                 color: black;
                 background-color: #ff9d4d;
-                border-radius: 6px;
+                border-radius: 15px;
                 border: 2px solid #C75A00;
                 text-align: center;
             }
