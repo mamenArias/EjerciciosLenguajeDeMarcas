@@ -30,6 +30,10 @@
                 height: auto;
             }
             
+            header nav {
+                z-index: 1000;
+            }
+            
             .logo {
                 margin: auto;
                 width: 200px;
@@ -37,7 +41,8 @@
                 margin-left: 42%;
             }
             
-            .menu_bar {
+            .menu_bar,
+            .menuResponsive {
                 display: none;
             }
             
@@ -281,6 +286,39 @@
                 .marco {
                     grid-template-rows: 205px 0px auto 0px;
                 }
+                header nav {
+                    width: 80%;
+                    height: 100%;
+                    margin: 0;
+                    position: fixed;
+                }
+                .menuResponsive ul li {
+                    display: block;
+                    float: none;
+                }
+                .menu_bar {
+                    display: block;
+                    width: 20%;
+                    position: static;
+                    top: 25%;
+                    background: #FFCE29;
+                    border-style: solid;
+                    border-color: #ff8008;
+                    border-radius: 15px;
+                }
+                .menu_bar .bt-menu {
+                    display: block;
+                    padding: 15px;
+                    text-decoration: none;
+                }
+                .menu_bar a {
+                    text-decoration: none;
+                    font-size: 20px;
+                    font-family: 'Londrina Solid', cursive;
+                    color: black;
+                    text-align: center;
+                    font-weight: bolder;
+                }
                 .logo {
                     margin: auto;
                     width: 200px;
@@ -304,25 +342,6 @@
                     width: 25%;
                     height: auto;
                     vertical-align: super;
-                }
-                .menu_bar {
-                    display: block;
-                    width: 75px;
-                    position: static;
-                    top: 25%;
-                    background: #FFCE29;
-                    border-style: solid;
-                    border-color: #ff8008;
-                    padding: 18px;
-                    border-radius: 15px;
-                }
-                .menu_bar a {
-                    text-decoration: none;
-                    font-size: 20px;
-                    font-family: 'Londrina Solid', cursive;
-                    color: black;
-                    text-align: center;
-                    font-weight: bolder;
                 }
                 .contenido {
                     overflow-y: scroll;
