@@ -223,7 +223,7 @@
     
     @media only screen and (max-width: 768px) {
         .marco {
-            grid-template-rows: 205px 0px auto 0px;
+            grid-template-rows: 193px 0px auto 0px;
         }
         header nav {
             width: 80%;
