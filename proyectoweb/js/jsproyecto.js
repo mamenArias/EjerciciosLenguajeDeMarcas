@@ -1,5 +1,6 @@
 $(document).ready(main);
 
+//Animación menú responsive
 var contador = 1;
 
 function main() {
@@ -16,7 +17,6 @@ function main() {
             $('.menuResponsive').animate({
                 left: '-100%'
             });
-
         }
     });
 }

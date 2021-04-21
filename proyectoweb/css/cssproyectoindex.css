@@ -59,6 +59,8 @@
                 width: 25%;
                 height: auto;
                 margin: 3% 35%;
+                animation-name: animacion;
+                animation-duration: 3s;
             }
             
             .menu {
@@ -100,6 +102,7 @@
                 color: #C75A00;
                 font-size: 1.5em;
                 padding: 11px 13px;
+                transition: all .5s ease-in-out;
             }
             
             a:active {
@@ -272,9 +275,13 @@
                 height: auto;
             }
             
+            .hojaResponsive {
+                display: none;
+            }
+            
             .boton {
                 display: block;
-                margin: 0% 45%;
+                margin: 0% 43%;
                 text-decoration: none;
                 padding: 10px;
                 font-weight: 600;
@@ -291,14 +298,16 @@
                 color: white;
             }
             
-            .pie {
-                display: none;
+            @keyframes animacion {
+                from {
+                    opacity: 0;
+                }
+                to {
+                    opacity: 1;
+                }
             }
             
             @media only screen and (max-width: 768px) {
-                * {
-                    overflow: hidden;
-                }
                 .marco {
                     grid-template-rows: 193px 0px auto 0px;
                 }
@@ -313,7 +322,7 @@
                     overflow: hidden;
                     height: 100%;
                     left: -100%;
-                    width: 50%;
+                    width: 60%;
                     text-align: center;
                     background-color: #FFCE29;
                     border-radius: 10px;
@@ -412,9 +421,18 @@
                     width: 100%;
                 }
                 .juego {
-                    display: block;
-                    margin: 0% 17%;
-                    width: 70%;
+                    float: left;
+                    margin: 0;
+                    width: 62%;
+                    height: auto;
+                }
+                .hojaResponsive {
+                    float: right;
+                    display: inline;
+                    margin-top: 30px;
+                    margin-right: 20px;
+                    padding: 0;
+                    width: 30%;
                     height: auto;
                 }
                 .boton {
@@ -422,12 +440,5 @@
                 }
                 .menu {
                     visibility: hidden;
-                }
-                .pie {
-                    display: block;
-                    background-color: #0f73ca;
-                    border-color: #1193df;
-                    border-radius: 20px;
-                    width: 100%;
                 }
             }

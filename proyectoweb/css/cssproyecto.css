@@ -17,7 +17,7 @@
     .marco {
         display: grid;
         grid-template-columns: 250px auto;
-        grid-template-rows: 213px 0px auto 0px;
+        grid-template-rows: 209px 0px auto 0px;
         grid-gap: 0px;
         width: 100vw;
         height: 100vh;
@@ -30,6 +30,10 @@
         height: auto;
     }
     
+    header nav {
+        z-index: 1000;
+    }
+    
     .logo {
         margin: auto;
         width: 200px;
@@ -38,12 +42,12 @@
     }
     
     .hoja {
-        display: inline-block;
-        margin: 0;
+        float: right;
+        margin-top: 10px;
+        margin-right: 10px;
         padding: 0;
         width: 125px;
         height: auto;
-        margin-left: 35%;
     }
     
     .menu_bar,
@@ -139,7 +143,15 @@
     .menulateral li {
         font-family: 'New Tegomin', serif;
         text-align: center;
+    }
+    
+    .menulateral li a {
         text-decoration: none;
+        color: black;
+    }
+    
+    .menulateral li a:active {
+        font-weight: bold;
     }
     
     .icono {
@@ -196,6 +208,9 @@
         border-radius: 20px;
         object-fit: contain;
         box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.45);
+        overflow: hidden;
+        animation-name: animacion;
+        animation-duration: 3s;
     }
     
     .fotohuevos {
@@ -208,6 +223,8 @@
         border-radius: 20px;
         object-fit: contain;
         box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.45);
+        animation-name: animacion;
+        animation-duration: 3s;
     }
     
     .fotocaza {
@@ -219,11 +236,30 @@
         border-radius: 20px;
         object-fit: contain;
         box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.45);
+        animation-name: animacion;
+        animation-duration: 3s;
+    }
+    
+    @keyframes animacion {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    
+    .grande:hover {
+        transform: scale(1.1);
     }
     
     @media only screen and (max-width: 768px) {
         .marco {
+            grid-template-columns: 80px auto;
             grid-template-rows: 193px 0px auto 0px;
+        }
+        .palabras {
+            display: none;
         }
         header nav {
             width: 80%;
@@ -236,10 +272,11 @@
             overflow: hidden;
             height: 100%;
             left: -100%;
-            width: 50%;
+            width: 60%;
             text-align: center;
             background-color: #FFCE29;
             border-radius: 10px;
+            z-index: 1;
         }
         .menuResponsive ul {
             list-style: none;
