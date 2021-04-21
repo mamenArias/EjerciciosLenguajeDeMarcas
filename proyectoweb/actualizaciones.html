@@ -18,6 +18,7 @@ Fecha: Junio 2021
 
     <!-- una hoja de estilos personalizada-->
     <link href="./css/cssproyecto.css" rel="stylesheet" />
+    <link href="./css/fonts.css" rel="stylesheet" />
 
     <!-- iconos u otros elementos externos -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
@@ -32,8 +33,24 @@ Fecha: Junio 2021
         <header class="encabezado">
             <div id="logo">
                 <img class="logo" src="./media/logo.png">
+                <img class="hoja" src="./media/hoja.png">
             </div>
-            <nav class="menu">
+
+            <div class="menu_bar">
+                <a href="#" class="bt-menu"><span class="icon-menu"></span></a>
+            </div>
+
+            <nav aria-label class="menuResponsive">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="eventos.html">Eventos</a></li>
+                    <li><a href="personajes.html">Personajes</a></li>
+                    <li><a class="activo" href="actualizaciones.html">Actualizaciones</a></li>
+                    <li><a href="otros.html">Otros</a></li>
+                </ul>
+            </nav>
+
+            <nav aria-label class="menu">
                 <ul>
                     <li><a href="index.html">Inicio</a></li>
                     <li><a href="eventos.html">Eventos</a></li>
@@ -48,6 +65,8 @@ Fecha: Junio 2021
         <div class="contenido"></div>
 
     </div>
+
+    <script src="./js/jsproyecto.js"></script>
 </body>
 
 </html>
