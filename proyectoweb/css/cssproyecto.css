@@ -94,6 +94,7 @@
         color: #C75A00;
         font-size: 1.5em;
         padding: 11px 13px;
+        transition: all .5s ease-in-out;
     }
     
     a:active {
@@ -141,8 +142,7 @@
         outline: none;
     }
     
-    .lado a:hover,
-    .botonDesplegable:hover {
+    .lado a:hover {
         color: black;
     }
     
@@ -171,6 +171,10 @@
         padding: 7px 8px;
     }
     /*Estilo para el icono del menú desplegable*/
+    
+    .botonDesplegable:hover {
+        color: rgb(255, 86, 19);
+    }
     
     .icono {
         width: 20px;
@@ -218,6 +222,14 @@
         color: black;
     }
     
+    p a:hover {
+        color: rgb(255, 86, 19);
+    }
+    
+    p a:active {
+        background-color: transparent;
+    }
+    
     .parrafo2 {
         clear: left;
     }
@@ -233,38 +245,70 @@
     }
     
     .fotocerezo {
-        width: 600px;
+        width: 60%;
         height: auto;
         float: right;
         margin: 20px 0 20px 35px;
     }
     
     .fotohuevos {
-        width: 400px;
+        width: 35%;
         height: auto;
         float: left;
         margin: 20px 40px 20px 0;
     }
     
     .fotocaza {
-        width: 500px;
+        width: 45%;
         height: auto;
         margin: 20px 0 20px 20px;
         float: right;
     }
     
     .fotonaturaleza {
-        width: 400px;
+        width: 40%;
         height: auto;
         float: right;
         margin: 20px 0 20px 30px;
     }
     
     .fotomayo {
-        width: 400px;
+        width: 35%;
         height: auto;
         float: left;
         margin: 10px 40px 20px 0;
+    }
+    
+    .fotomuseo {
+        width: 45%;
+        height: auto;
+        float: right;
+        margin: 20px 0 20px 30px;
+    }
+    
+    .fotosboda {
+        display: inline-block;
+    }
+    
+    .fotoboda1 {
+        margin: 20px 0;
+        float: left;
+        width: 48%;
+        height: auto;
+    }
+    
+    .fotoboda2 {
+        margin: 20px 0;
+        float: right;
+        width: 48%;
+        height: auto;
+    }
+    
+    .fotofuegos {
+        margin-top: 30px;
+        float: right;
+        width: 45%;
+        height: auto;
     }
     
     @keyframes animacion {
