@@ -307,7 +307,7 @@
                 }
             }
             
-            @media only screen and (max-width: 768px) {
+            @media only screen and (max-width: 640px) {
                 .marco {
                     grid-template-rows: 193px 0px auto 0px;
                 }
