@@ -102,7 +102,7 @@
                 color: #C75A00;
                 font-size: 1.5em;
                 padding: 11px 13px;
-                transition: all .5s ease-in-out;
+                transition: all .3s ease-in-out;
             }
             
             a:active {
@@ -317,6 +317,14 @@
             }
             
             @media only screen and (max-width: 640px) {
+                @keyframes animacion2 {
+                    from {
+                        margin-left: -100%;
+                    }
+                    to {
+                        margin-left: 30%;
+                    }
+                }
                 .marco {
                     grid-template-rows: 193px 0px auto 0px;
                 }

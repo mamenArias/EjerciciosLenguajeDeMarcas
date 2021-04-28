@@ -94,7 +94,7 @@
         color: #C75A00;
         font-size: 1.5em;
         padding: 11px 13px;
-        transition: all .5s ease-in-out;
+        transition: all .3s ease-in-out;
     }
     
     a:active {
@@ -186,7 +186,7 @@
         grid-column: 2 / span 1;
         grid-row: 3 / span 1;
         background-color: #C0F0E9;
-        opacity: 0.92;
+        opacity: 0.95;
         border-radius: 20px;
         padding: 3%;
         text-align: justify;
@@ -242,6 +242,7 @@
         animation-name: animacion;
         animation-duration: 3s;
         object-fit: contain;
+        cursor: pointer;
     }
     
     .fotocerezo {
@@ -321,7 +322,7 @@
     }
     
     .grande:hover {
-        transform: scale(1.1);
+        opacity: 0.8;
     }
     
     @media only screen and (max-width: 640px) {

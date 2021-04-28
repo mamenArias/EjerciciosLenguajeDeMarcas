@@ -21,6 +21,7 @@ function main() {
     });
 }
 
+//Botón del menú lateral
 var dropdown = document.getElementsByClassName("botonDesplegable");
 var i;
 
@@ -35,3 +36,18 @@ for (i = 0; i < dropdown.length; i++) {
         }
     });
 }
+
+//Animación de las imágenes para abrirse a pantalla completa cuando hacemos click
+$(document).ready(function() {
+
+    //Al hacer clic en cualquier img ejecutamos la acción
+    $('.content img').click(function() {
+        //Capturamos el src de la img
+        var postimg = $(this).attr('src');
+        //Agregamos el src a una href simbólico
+        $('#verimagenes').attr('href', postimg);
+        //Hacemos clic en el enlace para activar el visor
+        $('#verimagenes').click();
+    });
+
+});
