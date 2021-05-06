@@ -44,10 +44,14 @@
             .hoja {
                 float: right;
                 margin-top: 10px;
-                margin-right: 10px;
+                margin-right: 20px;
                 padding: 0;
                 width: 125px;
                 height: auto;
+            }
+            
+            .hoja:hover {
+                transform: scale(1.3);
             }
             
             .menu_bar,
@@ -129,11 +133,31 @@
                 overflow-x: hidden;
             }
             
+            h1,
             p {
                 padding-left: 10%;
                 padding-right: 10%;
                 font-family: 'Acme', sans-serif;
                 font-size: 18px;
+            }
+            
+            .login {
+                text-align: center;
+                font-family: 'Acme', sans-serif;
+                font-size: 18px;
+                margin-top: 30px;
+            }
+            
+            .login input {
+                font-size: larger;
+            }
+            
+            .botonLogin {
+                text-align: center;
+                font-family: 'Acme', sans-serif;
+                font-size: 18px;
+                padding: 5px;
+                border-radius: 15px;
             }
             
             .separador {

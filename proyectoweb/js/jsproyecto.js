@@ -51,3 +51,46 @@ $(document).ready(function() {
     });
 
 });
+
+
+//Código para leer el XML y validar el usuario y contraseña
+function leerXML() {
+    // lee desde aquí.
+    var xhr = new XMLHttpRequest();
+    xhr.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            miFuncion(this);
+        }
+    };
+    xhr.open("GET", "registrados.xml", true);
+    xhr.send();
+}
+
+function miFuncion(xml) {
+
+    var i;
+    var usrNom;
+    var usrPsw;
+    var xmlDoc = xml.responseXML;
+    var x = xmlDoc.getElementsByTagName("usuario");
+    var loginCorrecto;
+
+    for (i = 0; i < x.length; i++) {
+
+        if (x[i].getElementsByTagName("nombre")[0].childNodes[0].nodeValue == document.getElementById("userid").value &&
+            x[i].getElementsByTagName("clave")[0].childNodes[0].nodeValue == document.getElementById("pwd").value) {
+            loginCorrecto = true;
+            break;
+        } else {
+            loginCorrecto = false;
+        }
+    }
+
+    if (loginCorrecto) {
+        alert("Login correcto.");
+    } else {
+        alert("Usuario o contraseña incorrectos.");
+    }
+
+
+}
