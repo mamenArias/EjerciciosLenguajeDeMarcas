@@ -1,5 +1,6 @@
 $(document).ready(main);
 
+
 //Animación menú responsive
 var contador = 1;
 
@@ -53,6 +54,12 @@ $(document).ready(function() {
 });
 
 
+$(document).ready(function() {
+
+    $("#textoOculto").hide();
+
+});
+
 //Código para leer el XML y validar el usuario y contraseña
 function leerXML() {
     // lee desde aquí.
@@ -88,6 +95,11 @@ function miFuncion(xml) {
 
     if (loginCorrecto) {
         alert("Login correcto.");
+        $(document).ready(function() {
+
+            $("#textoOculto").show();
+
+        });
     } else {
         alert("Usuario o contraseña incorrectos.");
     }
