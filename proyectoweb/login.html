@@ -35,7 +35,7 @@ Fecha: Junio 2021
     <div class="marco">
         <header class="encabezado">
             <div id="logo">
-                <img class="logo" src="./media/logo.png">
+                <img class="logo" src="./media/logo.png" alt="Logo">
                 <a href="https://www.cenecmalaga.es/" target="blank"><img class="hoja" src="./media/hoja.png" alt="Proyecto Final Web"></a>
             </div>
 
@@ -67,13 +67,15 @@ Fecha: Junio 2021
 
         <div class="contenido">
 
-            <div class="login">
-                <h2> Welcome to Login Page </h2>
-                <br><input type="text" id="userid" name="userid" /><br>
-                <br><input type="password" id="pwd" name="password" /><br><br>
+            <form class="login">
+                <h2> Inicia sesión: </h2>
+                <br><input type="text" id="userid" name="userid" placeholder="Usuario" /><br>
+                <br><input type="password" id="pwd" name="password" placeholder="Contraseña" /><br><br>
                 <input class="botonLogin" onclick="leerXML()" type="button" id="b1" value="Login" />
-                <input class="botonLogin" type="reset" value="Cancel">
-            </div>
+                <input type="reset" class="botonLogin" value="Cancel">
+            </form>
+
+            <img class="imgInicioSesion" src="./media/inicioSesion.png" alt="¡Toom Nook te saluda para que inicies sesión!">
 
         </div>
 

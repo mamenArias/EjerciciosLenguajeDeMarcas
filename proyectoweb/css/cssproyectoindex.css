@@ -141,6 +141,15 @@
                 font-size: 20px;
             }
             
+            input {
+                background-color: #fab378;
+                color: black;
+                padding: 0.2%;
+                font-family: 'Acme', sans-serif;
+                font-size: 18px;
+                border-radius: 10px;
+            }
+            
             .login {
                 text-align: center;
                 font-family: 'Acme', sans-serif;
@@ -153,11 +162,19 @@
             }
             
             .botonLogin {
+                background-color: #FFCE29;
                 text-align: center;
                 font-family: 'Acme', sans-serif;
                 font-size: 18px;
-                padding: 5px;
+                padding: 8px;
                 border-radius: 15px;
+            }
+            
+            .imgInicioSesion {
+                width: 27%;
+                height: auto;
+                margin-left: 36%;
+                margin-top: 2%;
             }
             
             .separador {
@@ -460,6 +477,11 @@
                     border-radius: 20px;
                     grid-column: 1 / span 2;
                     width: 100%;
+                }
+                .imgInicioSesion {
+                    width: 65%;
+                    margin-left: 18%;
+                    margin-top: 5%;
                 }
                 .juego {
                     float: left;
