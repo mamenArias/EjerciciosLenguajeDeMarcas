@@ -91,8 +91,6 @@ function miFuncion(xml) {
         alert("Login correcto.");
         var div = document.getElementById("textoOculto");
         div.style.display = "block";
-        var div2 = document.getElementById("login");
-        div2.style.display = "none";
     } else {
         alert("Usuario o contraseña incorrectos.");
     }
