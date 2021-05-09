@@ -154,14 +154,14 @@
                 border-radius: 10px;
             }
             
-            .login {
+            #login {
                 text-align: center;
                 font-family: 'Acme', sans-serif;
                 font-size: 18px;
                 margin-top: 30px;
             }
             
-            .login input {
+            #login input {
                 font-size: larger;
             }
             
