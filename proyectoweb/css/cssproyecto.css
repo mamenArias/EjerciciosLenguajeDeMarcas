@@ -217,6 +217,11 @@
         text-align: left;
     }
     
+    .listasContenido li ul li {
+        list-style: '- ';
+        margin-left: 20px;
+    }
+    
     h2 {
         font-family: 'Acme', sans-serif;
         font-size: 26px;
@@ -271,7 +276,7 @@
     }
     
     .fotocaza {
-        width: 45%;
+        width: 60%;
         height: auto;
         margin: 20px 0 20px 20px;
         float: right;
@@ -319,7 +324,35 @@
     .fotofuegos {
         margin-top: 30px;
         float: right;
-        width: 45%;
+        width: 40%;
+        height: auto;
+    }
+    
+    .fotocalabaza {
+        float: right;
+        margin-left: 20px;
+        width: 40%;
+        height: auto;
+    }
+    
+    .halloween {
+        margin: 0 10px 5px 0;
+        float: left;
+        width: 35%;
+        height: auto;
+    }
+    
+    .pavo {
+        float: right;
+        margin-left: 20px;
+        width: 50%;
+        height: auto;
+    }
+    
+    .juguete {
+        margin: 0 10px 5px 0;
+        float: left;
+        width: 35%;
         height: auto;
     }
     
