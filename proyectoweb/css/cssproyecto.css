@@ -146,6 +146,13 @@
         outline: none;
     }
     
+    .lado .menuDesplegable a {
+        padding: 0;
+        margin-left: 2px;
+        border-radius: 10px;
+        background-color: rgb(253, 181, 122);
+    }
+    
     .lado a:hover {
         color: black;
     }
@@ -331,7 +338,7 @@
     
     @media only screen and (max-width: 640px) {
         .marco {
-            grid-template-columns: 80px auto;
+            grid-template-columns: 90px auto;
             grid-template-rows: 193px 0px auto 0px;
         }
         .palabras {
@@ -431,5 +438,9 @@
             width: 100%;
             padding: 0;
             margin: 0 0 20px 0;
+        }
+        .menuDesplegable a {
+            font-size: small;
+            margin-left: 0;
         }
     }
