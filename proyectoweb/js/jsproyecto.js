@@ -54,6 +54,7 @@ $(document).ready(function() {
 });
 
 
+document.getElementById("conectado").innerHTML = "| Bienvenid@ " + sessionStorage.getItem("user") + " |";
 //Código para leer el XML y validar el usuario y contraseña
 function leerXML() {
     // lee desde aquí.
@@ -67,6 +68,32 @@ function leerXML() {
     xhr.send();
 }
 
+
+// Ocultamos el botón de desconectar
+function ocultar() {
+    $(".logout").hide();
+    $("#conectado").hide();
+    $(".textoOculto").hide();
+}
+
+//document.getElementById("conectado").innerHTML = "| Bienvenid@ " + sessionStorage.getItem("user") + " |";
+
+function cerrarSesion() {
+    if (typeof(Storage) !== "undefined") {
+        if (confirm("¿Desea Cerrar Sesión?")) {
+            sessionStorage.removeItem("user");
+            location.reload();
+        } else {
+
+        }
+
+    } else {
+        alert("Este navegador no soporta web storage...");
+    }
+
+    return false;
+}
+
 function miFuncion(xml) {
 
     var i;
@@ -78,9 +105,19 @@ function miFuncion(xml) {
 
     for (i = 0; i < x.length; i++) {
 
-        if (x[i].getElementsByTagName("nombre")[0].childNodes[0].nodeValue == document.getElementById("userid").value &&
-            x[i].getElementsByTagName("clave")[0].childNodes[0].nodeValue == document.getElementById("pwd").value) {
+        if (x[i].getElementsByTagName("nombre")[0].childNodes[0].nodeValue == document.getElementById("user").value &&
+            x[i].getElementsByTagName("clave")[0].childNodes[0].nodeValue == document.getElementById("pass").value) {
             loginCorrecto = true;
+            nombre = x[i].getElementsByTagName("nombre")[0].childNodes[0].nodeValue;
+            clave = x[i].getElementsByTagName("clave")[0].childNodes[0].nodeValue;
+
+            if (typeof(Storage) != 'undefined') {
+                sessionStorage.setItem('user', nombre);
+                sessionStorage.setItem('pass', clave);
+            } else {
+                alert("El navegador no es compatible con SessionStorage.")
+            }
+
             break;
         } else {
             loginCorrecto = false;
@@ -88,14 +125,25 @@ function miFuncion(xml) {
     }
 
     if (loginCorrecto) {
-        alert("Login correcto.");
-        var div = document.getElementById("textoOculto");
-        div.style.display = "block";
-        var div2 = document.getElementById("login");
-        div.style.display = "none";
+        alert("Bienvenid@ " + nombre);
+        $(".logout").show();
+        $(".loginBoton").hide();
+        $(".login").hide();
+        document.getElementById("conectado").innerHTML = "Bienvenid@ " + sessionStorage.getItem("user");
+        $("#conectado").show();
+        $(".textoOculto").show();
     } else {
         alert("Usuario o contraseña incorrectos.");
     }
 
 
 }
+
+/*function comprobarLogin() {
+
+    if (sessionStorage.getItem('user').length > 0) {
+        $('#loginBoton').css('display', 'none');
+        $('#logout').css('display', 'inline-block');
+        $('.conectado').css('display', 'inline-block');
+    }
+}*/

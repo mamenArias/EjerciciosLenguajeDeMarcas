@@ -31,7 +31,7 @@ Fecha: Junio 2021
 
 </head>
 
-<body>
+<body onload="ocultar()">
     <div class="marco">
         <header class="encabezado">
             <div id="logo">
@@ -49,7 +49,9 @@ Fecha: Junio 2021
                     <li><a href="eventos.html">Eventos</a></li>
                     <li><a href="personajes.html">Personajes</a></li>
                     <li><a href="edificios.html">Edificios</a></li>
-                    <li><a class="activo" href="login.html">Login</a></li>
+                    <li><a class="activo" id="loginBoton" href="login.html">Zona Privada</a></li>
+                    <div id="conectado" class="textoConectado"></div>
+                    <li><a class="logout" id="logout" onclick="cerrarSesion()">Desconectar</a></li>
                 </ul>
             </nav>
 
@@ -59,7 +61,10 @@ Fecha: Junio 2021
                     <li><a href="eventos.html">Eventos</a></li>
                     <li><a href="personajes.html">Personajes</a></li>
                     <li><a href="edificios.html">Edificios</a></li>
-                    <li><a class="activo" href="login.html">Login</a></li>
+                    <li><a class="activo loginBoton" id="loginBoton" href="login.html">Zona Privada</a></li>
+                    <div id="conectado" class="textoConectado"></div>
+                    <li><a class="logout" id="logout" onclick="cerrarSesion()"><em class="fa fa-sign-out" alt="Desconectar"></em></a></li>
+
                 </ul>
             </nav>
         </header>
@@ -67,20 +72,17 @@ Fecha: Junio 2021
 
         <div class="contenido">
 
-            <form id="login">
+            <form id="login" class="login">
                 <h2> Inicia sesión: </h2>
-                <br><input type="text" id="userid" name="userid" placeholder="Usuario" /><br>
-                <br><input type="password" id="pwd" name="password" placeholder="Contraseña" /><br><br>
+                <br><input type="text" id="user" name="userid" placeholder="Usuario" /><br>
+                <br><input type="password" id="pass" name="password" placeholder="Contraseña" /><br><br>
                 <input class="botonLogin" onclick="leerXML()" type="button" id="b1" value="Login" />
                 <input type="reset" class="botonLogin" value="Cancel">
             </form>
 
             <img class="imgInicioSesion" src="./media/inicioSesion.png" alt="¡Toom Nook te saluda para que inicies sesión!">
 
-
-            <div>
-                <p id="textoOculto">Hola qué tal</p>
-            </div>
+            <p class="textoOculto"> ¡Bienvenido a la sección secreta!</p>
         </div>
 
     </div>
