@@ -54,9 +54,9 @@ $(document).ready(function() {
 });
 
 
-document.getElementById("conectado").innerHTML = "| Bienvenid@ " + sessionStorage.getItem("user") + " |";
+//document.getElementById("conectado").innerHTML = "| Bienvenid@ " + localStorage.getItem("user") + " |";
 //Código para leer el XML y validar el usuario y contraseña
-function leerXML() {
+/*function leerXML() {
     // lee desde aquí.
     var xhr = new XMLHttpRequest();
     xhr.onreadystatechange = function() {
@@ -76,12 +76,12 @@ function ocultar() {
     $(".textoOculto").hide();
 }
 
-//document.getElementById("conectado").innerHTML = "| Bienvenid@ " + sessionStorage.getItem("user") + " |";
+document.getElementById("conectado").innerHTML = "| Bienvenid@ " + localStorage.getItem("user") + " |";
 
 function cerrarSesion() {
     if (typeof(Storage) !== "undefined") {
         if (confirm("¿Desea Cerrar Sesión?")) {
-            sessionStorage.removeItem("user");
+            localStorage.removeItem("user");
             location.reload();
         } else {
 
@@ -112,8 +112,8 @@ function miFuncion(xml) {
             clave = x[i].getElementsByTagName("clave")[0].childNodes[0].nodeValue;
 
             if (typeof(Storage) != 'undefined') {
-                sessionStorage.setItem('user', nombre);
-                sessionStorage.setItem('pass', clave);
+                localStorage.setItem('user', nombre);
+                localStorage.setItem('pass', clave);
             } else {
                 alert("El navegador no es compatible con SessionStorage.")
             }
@@ -129,7 +129,7 @@ function miFuncion(xml) {
         $(".logout").show();
         $(".loginBoton").hide();
         $(".login").hide();
-        document.getElementById("conectado").innerHTML = "Bienvenid@ " + sessionStorage.getItem("user");
+        document.getElementById("conectado").innerHTML = "Bienvenid@ " + localStorage.getItem("user");
         $("#conectado").show();
         $(".textoOculto").show();
     } else {
@@ -139,9 +139,15 @@ function miFuncion(xml) {
 
 }
 
+/*window.onload = (event) => {
+    //Con esto recuperamos el valor del campo usuario y lo mostramos.
+    var usuario = localStorage.getItem("user");
+    document.getElementsByClassName("conectado")[0].innerHTML = "Bienvenid@ " + nombre;
+};*/
+
 /*function comprobarLogin() {
 
-    if (sessionStorage.getItem('user').length > 0) {
+    if (localStorage.getItem('user').length > 0) {
         $('#loginBoton').css('display', 'none');
         $('#logout').css('display', 'inline-block');
         $('.conectado').css('display', 'inline-block');

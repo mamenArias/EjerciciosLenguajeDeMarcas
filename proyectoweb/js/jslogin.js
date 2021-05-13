@@ -1,17 +1,17 @@
 window.onload = function comprobarLogin() {
-    if (sessionStorage.getItem("user").length > 0) {
-        $('#loginOculto').css('display', 'none');
+    if (localStorage.getItem("user").length > 0) {
+        $('#loginBoton').css('display', 'none');
         $('#logout').css('display', 'inline-block');
         $('#conectado').css('display', 'inline-block');
     }
 }
-document.getElementById("conectado").innerHTML = "| Bienvenid@ " + sessionStorage.getItem("user") + " |";
+document.getElementById("conectado").innerHTML = "| Bienvenid@ " + localStorage.getItem("user") + " |";
 
 
 function cerrarSesion() {
     if (typeof(Storage) !== "undefined") {
         if (confirm("¿Desea Cerrar Sesión?")) {
-            sessionStorage.removeItem("user");
+            localStorage.removeItem("user");
             location.reload();
         } else {
 
@@ -57,8 +57,8 @@ function miFuncion(xml) {
                 pass = x[i].getElementsByTagName("clave")[0].childNodes[0].nodeValue;
                 if (typeof(Storage) !== 'undefined') {
                     // Código cuando Storage es compatible
-                    sessionStorage.setItem('user', nombre);
-                    sessionStorage.setItem('clave', pass);
+                    localStorage.setItem('user', nombre);
+                    localStorage.setItem('clave', pass);
                 } else {
                     alert("El navegador no es compatible con SessionStorage.")
                         // Código cuando Storage NO es compatible
