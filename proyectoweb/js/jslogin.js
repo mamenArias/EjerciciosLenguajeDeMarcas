@@ -72,6 +72,7 @@ function miFuncion(xml) {
 
     if (loginAceptado == true) {
         window.alert("Bienvenid@ " + nombre);
+        location.reload();
         //window.history.go(-1);
 
     } else {
