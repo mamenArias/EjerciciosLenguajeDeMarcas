@@ -76,7 +76,7 @@ function miFuncion(xml) {
         $('.logout').show();
         $('.conectado').show();
         $(".textoOculto").show();
-        location.reload();
+        //location.reload();
         //window.history.go(-1);
 
     } else {
