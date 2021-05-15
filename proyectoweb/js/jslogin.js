@@ -73,6 +73,7 @@ function miFuncion(xml) {
     if (loginAceptado == true) {
         window.alert("Bienvenid@ " + nombre);
         $(".loginBoton").hide();
+        $(".login").hide();
         $(".logout").show();
         $(".conectado").show();
         $(".textoOculto").show();
