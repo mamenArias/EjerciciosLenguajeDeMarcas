@@ -57,8 +57,8 @@
                 $("#loginBoton").hide();
                 $("#logout").show();
                 $("#textOculto").show();
-                document.getElementById("conectado").innerHTML = sessionStorage.getItem("user");
-
+                document.getElementById("conectado").innerHTML = "Bienvenido " + sessionStorage.getItem("user");
+                $("#conectado").show();
             }
         }
 
