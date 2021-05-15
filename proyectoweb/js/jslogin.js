@@ -1,3 +1,4 @@
+<<<<<<< HEAD
         function leerXML() {
             // lee desde GitHub.
             var xhr = new XMLHttpRequest();
@@ -8,6 +9,25 @@
             };
             xhr.open("GET", "registrados.xml", true);
             xhr.send();
+=======
+window.onload = function comprobarLogin() {
+    if (sessionStorage.getItem("user").length > 0) {
+        $('#loginOculto').css('display', 'none');
+        $('#logout').css('display', 'inline-block');
+        $('#conectado').css('display', 'inline-block');
+    }
+}
+document.getElementById("conectado").innerHTML = "| Bienvenid@ " + sessionStorage.getItem("user") + " |";
+
+
+function cerrarSesion() {
+    if (typeof(Storage) !== "undefined") {
+        if (confirm("¿Desea Cerrar Sesión?")) {
+            sessionStorage.removeItem("user");
+            location.reload();
+        } else {
+
+>>>>>>> parent of 0a4f187 (prueba2)
         }
 
 
@@ -43,12 +63,31 @@
 
 
 
+<<<<<<< HEAD
         function logOut() {
             if (typeof(Storage) !== "undefined") {
                 if (confirm("¿Estás seguro?")) {
                     sessionStorage.removeItem("user");
                     sessionStorage.removeItem("pass")
                     location.reload();
+=======
+    var x = xmlDoc.getElementsByTagName("usuario");
+    loginAceptado = false;
+
+    for (i = 0; i < x.length; i++) {
+        if (x[i].getElementsByTagName("nombre")[0].childNodes[0].nodeValue == document.getElementById("user").value) {
+            if (x[i].getElementsByTagName("clave")[0].childNodes[0].nodeValue == document.getElementById("pass").value) {
+                loginAceptado = true;
+                nombre = x[i].getElementsByTagName("nombre")[0].childNodes[0].nodeValue;
+                pass = x[i].getElementsByTagName("clave")[0].childNodes[0].nodeValue;
+                if (typeof(Storage) !== 'undefined') {
+                    // Código cuando Storage es compatible
+                    sessionStorage.setItem('user', nombre);
+                    sessionStorage.setItem('clave', pass);
+                } else {
+                    alert("El navegador no es compatible con SessionStorage.")
+                        // Código cuando Storage NO es compatible
+>>>>>>> parent of 0a4f187 (prueba2)
                 }
                 return false;
             }

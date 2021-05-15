@@ -51,6 +51,10 @@ $(document).ready(function() {
 });
 
 
+<<<<<<< HEAD
+=======
+document.getElementById("conectado").innerHTML = "| Bienvenid@ " + sessionStorage.getItem("user") + " |";
+>>>>>>> parent of 0a4f187 (prueba2)
 //Código para leer el XML y validar el usuario y contraseña
 function leerXML() {
     // lee desde aquí.
@@ -70,9 +74,31 @@ function leerXML() {
     $(".logout").hide();
     $("#conectado").hide();
     $(".textoOculto").hide();
+<<<<<<< HEAD
 }*/
 
 //document.getElementById("conectado").innerHTML = "| Bienvenid@ " + sessionStorage.getItem("user") + " |";
+=======
+}
+
+//document.getElementById("conectado").innerHTML = "| Bienvenid@ " + sessionStorage.getItem("user") + " |";
+
+function cerrarSesion() {
+    if (typeof(Storage) !== "undefined") {
+        if (confirm("¿Desea Cerrar Sesión?")) {
+            sessionStorage.removeItem("user");
+            location.reload();
+        } else {
+
+        }
+
+    } else {
+        alert("Este navegador no soporta web storage...");
+    }
+
+    return false;
+}
+>>>>>>> parent of 0a4f187 (prueba2)
 
 function miFuncion(xml) {
 
@@ -85,7 +111,22 @@ function miFuncion(xml) {
 
     for (i = 0; i < x.length; i++) {
 
+<<<<<<< HEAD
         if (x[i].getElementsByTagName("nombre")[0].childNodes[0].nodeValue == nombreUsuario) {
+=======
+        if (x[i].getElementsByTagName("nombre")[0].childNodes[0].nodeValue == document.getElementById("user").value &&
+            x[i].getElementsByTagName("clave")[0].childNodes[0].nodeValue == document.getElementById("pass").value) {
+            loginCorrecto = true;
+            nombre = x[i].getElementsByTagName("nombre")[0].childNodes[0].nodeValue;
+            clave = x[i].getElementsByTagName("clave")[0].childNodes[0].nodeValue;
+
+            if (typeof(Storage) != 'undefined') {
+                sessionStorage.setItem('user', nombre);
+                sessionStorage.setItem('pass', clave);
+            } else {
+                alert("El navegador no es compatible con SessionStorage.")
+            }
+>>>>>>> parent of 0a4f187 (prueba2)
 
             if (x[i].getElementsByTagName("clave")[0].childNodes[0].nodeValue == passUsuario) {
 
@@ -113,6 +154,11 @@ function miFuncion(xml) {
         $(".logout").show();
         $(".loginBoton").hide();
         $(".login").hide();
+<<<<<<< HEAD
+=======
+        document.getElementById("conectado").innerHTML = "Bienvenid@ " + sessionStorage.getItem("user");
+        $("#conectado").show();
+>>>>>>> parent of 0a4f187 (prueba2)
         $(".textoOculto").show();
         $("#conectado").value = nombreUsuario;
         $("#conectado").show();
@@ -127,6 +173,7 @@ function miFuncion(xml) {
 
 }
 
+<<<<<<< HEAD
 function cerrarSesion() {
     if (typeof(Storage) !== "undefined") {
         if (confirm("¿Desea Cerrar Sesión?")) {
@@ -148,6 +195,14 @@ function comprobarLogin() {
         //  document.getElementById('.conectado').innerHTML = sessionStorage.getItem("usuario");
     } else {
         document.getElementById('#logout').style.display = "none";
+=======
+/*function comprobarLogin() {
+
+    if (sessionStorage.getItem('user').length > 0) {
+        $('#loginBoton').css('display', 'none');
+        $('#logout').css('display', 'inline-block');
+        $('.conectado').css('display', 'inline-block');
+>>>>>>> parent of 0a4f187 (prueba2)
     }
 }
 
