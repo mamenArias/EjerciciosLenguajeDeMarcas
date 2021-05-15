@@ -35,7 +35,9 @@
             }
             if (checkingData == true) {
                 alert("Bienvenido, " + nombreUsuario)
-                window.history.go(-1)
+                    //window.history.go(-1)
+            } else {
+                window.alert("Usuario o contraseña incorrectos");
             }
         }
 
@@ -57,11 +59,11 @@
                 $("#loginBoton").hide();
                 $("#logout").show();
                 $("#textOculto").show();
-                document.getElementById("conectado").innerHTML = "Bienvenido " + sessionStorage.getItem("user");
+
                 $("#conectado").show();
             }
         }
-
+        document.getElementById("conectado").innerHTML = "Bienvenido " + sessionStorage.getItem("user");
 
         window.onload = function launch() {
             $(".logout").hide();
