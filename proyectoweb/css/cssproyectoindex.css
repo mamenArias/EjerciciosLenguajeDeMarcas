@@ -170,7 +170,7 @@
             /*#textoOculto {
                 display: none;
             }
-            /*#conectado {
+            #conectado {
                 display: none;
             }
             /*.textoConectado,
@@ -182,6 +182,12 @@
                 font-family: 'Acme', sans-serif;
                 color: #f87000;
             }*/
+            
+            #conectado {
+                color: blue;
+                font-family: 'Acme', sans-serif;
+                font-size: 20px;
+            }
             
             input {
                 background-color: #fab378;
