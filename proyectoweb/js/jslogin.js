@@ -23,6 +23,7 @@
                     if (x[i].getElementsByTagName("clave")[0].childNodes[0].nodeValue == passUsuario) {
                         checkingData = true;
                         if (typeof(Storage) !== 'undefined') {
+                            //sessionStorage.setItem(nombreUsuario, passUsuario);
                             sessionStorage.setItem("user", nombreUsuario);
                             sessionStorage.setItem("pass", passUsuario);
                             location.reload();
@@ -53,7 +54,7 @@
         }
 
         function checking() {
-            if (sessionStorage.getItem("user").length > 0) {
+            if (sessionStorage.getItem(nombreUsuario).length > 0) {
                 $("#loginBoton").hide();
                 $("#logout").show();
                 $("#textOculto").show();
