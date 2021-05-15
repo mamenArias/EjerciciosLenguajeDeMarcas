@@ -52,6 +52,10 @@ $(document).ready(function() {
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+document.getElementById("conectado").innerHTML = "| Bienvenid@ " + sessionStorage.getItem("user") + " |";
+>>>>>>> parent of 0a4f187 (prueba2)
 =======
 document.getElementById("conectado").innerHTML = "| Bienvenid@ " + sessionStorage.getItem("user") + " |";
 >>>>>>> parent of 0a4f187 (prueba2)
@@ -155,7 +159,10 @@ function miFuncion(xml) {
         $(".loginBoton").hide();
         $(".login").hide();
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of 0a4f187 (prueba2)
         document.getElementById("conectado").innerHTML = "Bienvenid@ " + sessionStorage.getItem("user");
         $("#conectado").show();
 >>>>>>> parent of 0a4f187 (prueba2)
@@ -173,6 +180,7 @@ function miFuncion(xml) {
 
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 function cerrarSesion() {
     if (typeof(Storage) !== "undefined") {
@@ -196,6 +204,8 @@ function comprobarLogin() {
     } else {
         document.getElementById('#logout').style.display = "none";
 =======
+=======
+>>>>>>> parent of 0a4f187 (prueba2)
 /*function comprobarLogin() {
 
     if (sessionStorage.getItem('user').length > 0) {
