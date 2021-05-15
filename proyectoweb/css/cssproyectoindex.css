@@ -169,12 +169,11 @@
             }
             /*#textoOculto {
                 display: none;
-            }*/
+            }
             /*#conectado {
                 display: none;
-            }*/
-            
-            .textoConectado,
+            }
+            /*.textoConectado,
             .logout {
                 display: inline-block;
                 padding: 0;
@@ -182,7 +181,7 @@
                 font-weight: bolder;
                 font-family: 'Acme', sans-serif;
                 color: #f87000;
-            }
+            }*/
             
             input {
                 background-color: #fab378;

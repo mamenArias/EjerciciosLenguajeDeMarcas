@@ -39,7 +39,16 @@ Fecha: Junio 2021
                 <a href="#" class="bt-menu"><span class="icon-menu"></span></a>
             </div>
 
-            <nav aria-label class="menuResponsive">
+            <div aria-label class="menuResponsive">
+                <a class="activo" href="index.html">Inicio</a>
+                <a href="eventos.html">Eventos</a>
+                <a href="personajes.html">Personajes</a>
+                <a href="edificios.html">Edificios</a>
+                <a class="loginBoton" id="loginBoton" href="login.html">Zona Privada</a>
+                <div class="conectado"></div>
+                <a class="logout" id="logout" onclick="cerrarSesion()">Desconectar</a>
+            </div>
+            <!--<nav aria-label class="menuResponsive">
                 <ul>
                     <li><a class="activo" href="index.html">Inicio</a></li>
                     <li><a href="eventos.html">Eventos</a></li>
@@ -51,7 +60,7 @@ Fecha: Junio 2021
                     </li>
                     <li><a class="logout" id="logout" onclick="cerrarSesion()">Desconectar</a></li>
                 </ul>
-            </nav>
+            </nav>-->
 
             <div aria-label class="menu">
                 <a class="activo" href="index.html">Inicio</a>
@@ -157,6 +166,7 @@ Fecha: Junio 2021
         </div>
 
         <script src="./js/jsproyecto.js"></script>
+        <script src="./js/jslogin.js"></script>
 
 </body>
 
