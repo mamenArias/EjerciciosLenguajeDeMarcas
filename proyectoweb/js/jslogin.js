@@ -1,8 +1,8 @@
 function comprobarLogin() {
     if (sessionStorage.getItem("user").length > 0) {
-        //$('.loginBoton').hide();
-        //$('.logout').show();
-        $('.conectado').show();
+        //$(".loginBoton").hide();
+        //$(".logout").show();
+        $(".conectado").show();
         //$(".textoOculto").show();
     }
 }
@@ -56,10 +56,10 @@ function miFuncion(xml) {
                 loginAceptado = true;
                 nombre = x[i].getElementsByTagName("nombre")[0].childNodes[0].nodeValue;
                 pass = x[i].getElementsByTagName("clave")[0].childNodes[0].nodeValue;
-                if (typeof(Storage) !== 'undefined') {
+                if (typeof(Storage) !== "undefined") {
                     // Código cuando Storage es compatible
-                    sessionStorage.setItem('user', nombre);
-                    sessionStorage.setItem('clave', pass);
+                    sessionStorage.setItem("user", nombre);
+                    sessionStorage.setItem("clave", pass);
                 } else {
                     alert("El navegador no es compatible con SessionStorage.")
                         // Código cuando Storage NO es compatible
@@ -72,9 +72,9 @@ function miFuncion(xml) {
 
     if (loginAceptado == true) {
         window.alert("Bienvenid@ " + nombre);
-        $('.loginBoton').hide();
-        $('.logout').show();
-        $('.conectado').show();
+        $(".loginBoton").hide();
+        $(".logout").show();
+        $(".conectado").show();
         $(".textoOculto").show();
         //location.reload();
         //window.history.go(-1);
@@ -87,9 +87,9 @@ function miFuncion(xml) {
 }
 
 window.onload = function() {
-    $('.loginBoton').show();
-    $('.logout').hide();
-    $('.conectado').hide();
+    $(".loginBoton").show();
+    $(".logout").hide();
+    $(".conectado").hide();
     $(".textoOculto").hide();
 
     comprobarLogin();
