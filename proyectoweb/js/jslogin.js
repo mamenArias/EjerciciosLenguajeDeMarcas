@@ -1,8 +1,14 @@
 window.onload = function comprobarLogin() {
     if (sessionStorage.getItem("user").length > 0) {
-        $('#loginBoton').css('display', 'none');
-        $('#logout').css('display', 'inline-block');
-        $('#conectado').css('display', 'inline-block');
+        $('#loginBoton').hide();
+        $('#logout').show();
+        $('#conectado').show();
+        $(".textoOculto").show();
+    } else {
+        $('#loginBoton').show();
+        $('#logout').hide();
+        $('#conectado').hide();
+        $(".textoOculto").hide();
     }
 }
 document.getElementById("conectado").innerHTML = "| Bienvenid@ " + sessionStorage.getItem("user") + " |";
