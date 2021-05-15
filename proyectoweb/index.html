@@ -27,7 +27,7 @@ Fecha: Junio 2021
 
 </head>
 
-<body onload="ocultar(), comprobarLogin()">
+<body>
     <div class="marco">
         <header class="encabezado">
             <div id="logo">
@@ -53,8 +53,15 @@ Fecha: Junio 2021
                 </ul>
             </nav>
 
-            <nav aria-label class="menu">
-                <ul>
+            <div aria-label class="menu">
+                <a class="activo" href="index.html">Inicio</a>
+                <a href="eventos.html">Eventos</a>
+                <a href="personajes.html">Personajes</a>
+                <a href="edificios.html">Edificios</a>
+                <a class="loginBoton" id="loginBoton" href="login.html">Zona Privada</a>
+                <div class="conectado"></div>
+                <a class="logout" id="logout" onclick="cerrarSesion()">Desconectar</a>
+                <!--<ul>
                     <li><a class="activo" href="index.html">Inicio</a></li>
                     <li><a href="eventos.html">Eventos</a></li>
                     <li><a href="personajes.html">Personajes</a></li>
@@ -64,8 +71,8 @@ Fecha: Junio 2021
                         <p id="conectado"></p>
                     </li>
                     <li><a class="logout" id="logout" onclick="cerrarSesion()">Desconectar</a></li>
-                </ul>
-            </nav>
+                </ul>-->
+            </div>
 
         </header>
         <div class="contenido">

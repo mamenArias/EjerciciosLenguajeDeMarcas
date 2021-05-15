@@ -31,7 +31,7 @@ Fecha: Junio 2021
 
 </head>
 
-<body onload="ocultar()">
+<body>
     <div class="marco">
         <header class="encabezado">
             <div id="logo">
@@ -55,8 +55,15 @@ Fecha: Junio 2021
                 </ul>
             </nav>
 
-            <nav aria-label class="menu">
-                <ul>
+            <div aria-label class="menu">
+                <a class="activo" href="index.html">Inicio</a>
+                <a href="eventos.html">Eventos</a>
+                <a href="personajes.html">Personajes</a>
+                <a href="edificios.html">Edificios</a>
+                <a class="loginBoton" id="loginBoton" href="login.html">Zona Privada</a>
+                <a class="loginBoton" id="conectado" href=""></a>
+                <a class="logout" id="logout" onclick="cerrarSesion()">Desconectar</a>
+                <!--<ul>
                     <li><a href="index.html">Inicio</a></li>
                     <li><a href="eventos.html">Eventos</a></li>
                     <li><a href="personajes.html">Personajes</a></li>
@@ -65,8 +72,8 @@ Fecha: Junio 2021
                     <div id="conectado" class="textoConectado"></div>
                     <li><a class="logout" id="logout" onclick="cerrarSesion()"><em class="fa fa-sign-out" alt="Desconectar"></em></a></li>
 
-                </ul>
-            </nav>
+                </ul>-->
+            </div>
         </header>
 
 
@@ -82,12 +89,12 @@ Fecha: Junio 2021
 
             <img class="imgInicioSesion" src="./media/inicioSesion.png" alt="¡Toom Nook te saluda para que inicies sesión!">
 
-            <p class="textoOculto"> ¡Bienvenido a la sección secreta!</p>
+            <p id="textoOculto" class="textoOculto"> ¡Bienvenido a la sección secreta!</p>
         </div>
 
     </div>
 
-    <script src="./js/jsproyecto.js"></script>
+    <script src="./js/jslogin.js"></script>
 
 </body>
 
