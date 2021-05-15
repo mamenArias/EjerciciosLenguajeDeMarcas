@@ -75,6 +75,7 @@ function miFuncion(xml) {
         $(".loginBoton").hide();
         $(".login").hide();
         $(".logout").show();
+        document.getElementById("conectado").innerHTML = "| Bienvenid@ " + sessionStorage.getItem("user") + " |";
         $(".conectado").show();
         $(".textoOculto").show();
         //location.reload();
@@ -87,7 +88,7 @@ function miFuncion(xml) {
 
 }
 
-document.getElementById("conectado").innerHTML = "| Bienvenid@ " + sessionStorage.getItem("user") + " |";
+
 
 window.onload = function() {
     $(".loginBoton").show();
