@@ -1,14 +1,9 @@
-window.onload = function comprobarLogin() {
+function comprobarLogin() {
     if (sessionStorage.getItem("user").length > 0) {
-        $('#loginBoton').hide();
-        $('#logout').show();
-        $('#conectado').show();
+        $('.loginBoton').hide();
+        $('.logout').show();
+        $('.conectado').show();
         $(".textoOculto").show();
-    } else {
-        $('#loginBoton').show();
-        $('#logout').hide();
-        $('#conectado').hide();
-        $(".textoOculto").hide();
     }
 }
 document.getElementById("conectado").innerHTML = "| Bienvenid@ " + sessionStorage.getItem("user") + " |";
@@ -84,4 +79,13 @@ function miFuncion(xml) {
     }
 
 
+}
+
+window.onload = function() {
+    $('.loginBoton').show();
+    $('.logout').hide();
+    $('.conectado').hide();
+    $(".textoOculto").hide();
+
+    comprobarLogin();
 }
