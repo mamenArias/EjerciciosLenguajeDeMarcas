@@ -6,7 +6,7 @@ function comprobarLogin() {
         //$(".textoOculto").show();
     }
 }
-document.getElementById("conectado").innerHTML = "| Bienvenid@ " + sessionStorage.getItem("user") + " |";
+//document.getElementById("conectado").innerHTML = "| Bienvenid@ " + sessionStorage.getItem("user") + " |";
 
 
 function cerrarSesion() {
@@ -86,6 +86,8 @@ function miFuncion(xml) {
 
 
 }
+
+document.getElementById("conectado").innerHTML = "| Bienvenid@ " + sessionStorage.getItem("user") + " |";
 
 window.onload = function() {
     $(".loginBoton").show();
