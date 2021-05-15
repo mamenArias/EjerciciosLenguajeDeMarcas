@@ -6,7 +6,7 @@
                     miFuncion(this);
                 }
             };
-            xhr.open("GET", "https://sergiolt.github.io/Publico/proyectoweb/xml/registrados.xml", true);
+            xhr.open("GET", "registrados.xml", true);
             xhr.send();
         }
 
