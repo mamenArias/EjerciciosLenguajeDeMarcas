@@ -1,7 +1,8 @@
+$(document).ready(main);
 //Animación menú responsive
 var contador = 1;
 
-$(document).ready(function() {
+function main() {
     $('.menu_bar').click(function() {
         //$('.menuResponsive').toggle();
 
@@ -17,7 +18,7 @@ $(document).ready(function() {
             });
         }
     });
-});
+}
 
 //Botón del menú lateral
 var dropdown = document.getElementsByClassName("botonDesplegable");
