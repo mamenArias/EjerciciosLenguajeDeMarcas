@@ -30,11 +30,8 @@
         height: auto;
     }
     
-    header nav {
-        z-index: 1000;
-    }
-    
     .logo {
+        /*Logotipo de Animal Crossing*/
         margin: auto;
         width: 200px;
         height: auto;
@@ -42,6 +39,7 @@
     }
     
     .hoja {
+        /*Hoja con mis datos y del curso*/
         float: right;
         margin-top: 10px;
         margin-right: 20px;
@@ -56,6 +54,7 @@
     
     .menu_bar,
     .menuResponsive {
+        /*Ocultamos el menú responsive cuando estamos con la página en tamaño normal*/
         display: none;
     }
     
@@ -69,12 +68,8 @@
     
     .menu a {
         list-style: none;
-        padding: 20px;
-        padding-top: 0px;
-        padding-bottom: 0px;
         margin: 10px;
         display: inline-block;
-        position: relative;
         font-size: 20px;
         font-family: 'Londrina Solid', cursive;
         color: black;
@@ -94,52 +89,12 @@
         transition: all .3s ease-in-out;
     }
     
-    .menu ul {
-        list-style: none;
-        display: inline-block;
-        padding: 20px;
-        padding-top: 0px;
-        padding-bottom: 0px;
-    }
-    
-    .menu ul li {
-        float: left;
-        margin: 10px;
-    }
-    
-    .menu ul li a {
-        float: left;
-        font-size: 20px;
-        font-family: 'Londrina Solid', cursive;
-        color: black;
-        text-align: center;
-        padding: 14px 16px;
-        font-weight: bolder;
-        text-decoration: none;
-    }
-    
-    .menu ul li a:hover {
-        background-color: white;
-        border-radius: 15px;
-        height: 100%;
-        color: #C75A00;
-        font-size: 1.5em;
-        padding: 11px 13px;
-        transition: all .3s ease-in-out;
-    }
-    
-    a:active {
-        background-color: white;
-        border-radius: 15px;
-    }
-    
     .activo {
         background-color: white;
         border-radius: 15px;
         height: 100%;
     }
     
-    .textoConectado,
     .logout {
         display: inline-block;
         padding: 0;
@@ -188,11 +143,13 @@
         margin-left: 2px;
         border-radius: 10px;
         background-color: rgb(253, 181, 122);
-    }
-    
-    .lado a:hover {
         color: black;
+        text-decoration: none;
+        font-size: 15px;
     }
+    /*.lado a:hover {
+        color: black;
+    }*/
     
     .active {
         background-color: rgb(255, 142, 49);
@@ -204,27 +161,22 @@
         padding-left: 8px;
     }
     
-    .menuDesplegable a {
-        color: black;
-        text-decoration: none;
-        font-size: 15px;
-    }
-    
     .menuDesplegable a:hover {
         color: rgb(255, 86, 19);
     }
     
     .fa-caret-down {
+        /*Estilo para el icono del menú desplegable*/
         float: right;
         padding: 7px 8px;
     }
-    /*Estilo para el icono del menú desplegable*/
     
     .botonDesplegable:hover {
         color: rgb(255, 86, 19);
     }
     
     .icono {
+        /*Iconos según las estaciones*/
         width: 20px;
         height: auto;
     }
@@ -284,10 +236,12 @@
     }
     
     .parrafo2 {
+        /*Con esto hacemos que el párrafo no tenga nada a la izquierda, por lo que no nos sale a la altura de la foto que tiene al lado, sino por debajo*/
         clear: left;
     }
     
     .grande {
+        /*Css general para todas las imágenes del apartado Eventos*/
         vertical-align: middle;
         border-radius: 20px;
         box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.45);
@@ -392,6 +346,7 @@
         width: 35%;
         height: auto;
     }
+    /*EFECTO FLIP PARA LAS IMÁGENES DE PERSONAJES*/
     
     .flip-image {
         width: 300px;
@@ -448,6 +403,7 @@
     }
     
     @keyframes animacion {
+        /*Animación de las imágenes para que aparezcan poco a poco al cargar la página*/
         from {
             opacity: 0;
         }
@@ -457,6 +413,7 @@
     }
     
     .grande:hover {
+        /*Efecto que al pasar el ratón por encima de la foto, la vuelve un poco transparente.*/
         opacity: 0.8;
     }
     
@@ -466,6 +423,7 @@
             grid-template-rows: 193px 0px auto 0px;
         }
         .palabras {
+            /*Las palabras del menú lateral desaparecen y sólo quedan los iconos*/
             display: none;
         }
         header nav {
@@ -522,10 +480,7 @@
             display: block;
             width: 20%;
             position: static;
-            /*top: 25%;*/
             background: #FFCE29;
-            /*border-style: solid;
-            border-color: #ff8008;*/
             border-radius: 10px;
         }
         .menu_bar .bt-menu {

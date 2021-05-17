@@ -102,45 +102,6 @@
                 transition: all .3s ease-in-out;
             }
             
-            .menu ul {
-                list-style: none;
-                padding: 20px;
-                padding-top: 0px;
-                padding-bottom: 0px;
-            }
-            
-            .menu ul li {
-                margin: 10px;
-                display: inline-block;
-                position: relative;
-            }
-            
-            .menu ul li a {
-                display: block;
-                font-size: 20px;
-                font-family: 'Londrina Solid', cursive;
-                color: black;
-                text-align: center;
-                padding: 14px 16px;
-                font-weight: bolder;
-                text-decoration: none;
-            }
-            
-            .menu ul li a:hover {
-                background-color: white;
-                border-radius: 15px;
-                height: 100%;
-                color: #C75A00;
-                font-size: 1.5em;
-                padding: 11px 13px;
-                transition: all .3s ease-in-out;
-            }
-            
-            a:active {
-                background-color: white;
-                border-radius: 15px;
-            }
-            
             .activo {
                 background-color: white;
                 border-radius: 15px;
@@ -240,6 +201,7 @@
             }
             
             .slide {
+                /*Css del carrusel de imágenes*/
                 position: relative;
                 margin-top: 26px;
             }
@@ -408,6 +370,7 @@
             }
             
             @keyframes animacion2 {
+                /*Animación del logo de la página de inicio que aparece por la izquierda*/
                 from {
                     margin-left: -100%;
                 }
@@ -481,10 +444,7 @@
                     display: block;
                     width: 20%;
                     position: static;
-                    /*top: 25%;*/
                     background: #FFCE29;
-                    /*border-style: solid;
-                    border-color: #ff8008;*/
                     border-radius: 10px;
                 }
                 .menu_bar .bt-menu {
