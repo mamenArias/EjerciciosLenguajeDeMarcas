@@ -68,6 +68,7 @@
             }
             
             .menu {
+                flex-wrap: nowrap;
                 overflow: hidden;
                 height: auto;
                 text-align: center;
@@ -148,6 +149,7 @@
                 color: blue;
                 font-family: 'Acme', sans-serif;
                 font-size: 20px;
+                display: inline-block;
             }
             
             input {
