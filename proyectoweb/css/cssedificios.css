@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.edificio {
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+h2 {
+    text-align: center;
+    color: rgb(255, 86, 19);
+    margin-bottom: 10px;
+}
+
+.image-wrap {
+    width: 70%;
+    height: auto;
+    margin: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.image-wrap2 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.image-wrap img {
+    width: 70%;
+    border: solid;
+    border-color: white;
+    margin: 1% 30% 3% 30%;
+    z-index: 1;
+}
+
+.image-wrap2 img {
+    width: 50%;
+    border: solid;
+    border-color: white;
+    margin: 3% 0;
+    z-index: 1;
+}
+
+.image-wrap img:hover {
+    animation: move 10s ease;
+    /* Add infinite to loop. */
+    -ms-animation: move 10s ease;
+    -webkit-animation: move 10s ease;
+    /*-0-animation: move 40s ease;*/
+    -moz-animation: move 10s ease;
+}
+
+.image-wrap2 img:hover {
+    animation: move 10s ease;
+    /* Add infinite to loop. */
+    -ms-animation: move 10s ease;
+    -webkit-animation: move 10s ease;
+    /*-0-animation: move 40s ease;*/
+    -moz-animation: move 10s ease;
+}
+
+@keyframes move {
+    0% {
+        -webkit-transform-origin: center;
+        -moz-transform-origin: center;
+        -ms-transform-origin: center;
+        -o-transform-origin: center;
+        transform-origin: center;
+        transform: scale(1.0);
+        -ms-transform: scale(1.0);
+        /* IE 9 */
+        -webkit-transform: scale(1.0);
+        /* Safari and Chrome */
+        -o-transform: scale(1.0);
+        /* Opera */
+        -moz-transform: scale(1.0);
+        /* Firefox */
+    }
+    100% {
+        transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        /* IE 9 */
+        -webkit-transform: scale(1.2);
+        /* Safari and Chrome */
+        -o-transform: scale(1.2);
+        /* Opera */
+        -moz-transform: scale(1.2);
+        /* Firefox */
+    }
+}
