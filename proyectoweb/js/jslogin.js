@@ -1,14 +1,3 @@
-function comprobarLogin() {
-    if (sessionStorage.getItem("user").length > 0) {
-        //$(".loginBoton").hide();
-        //$(".logout").show();
-        $(".conectado").show();
-        //$(".textoOculto").show();
-    }
-}
-//document.getElementById("conectado").innerHTML = "| Bienvenid@ " + sessionStorage.getItem("user") + " |";
-
-
 function cerrarSesion() {
     if (typeof(Storage) !== "undefined") {
         if (confirm("¿Desea Cerrar Sesión?")) {
@@ -98,3 +87,13 @@ window.onload = function() {
 
     comprobarLogin();
 }
+
+function comprobarLogin() {
+    if (sessionStorage.getItem("user").length > 0) {
+        //$(".loginBoton").hide();
+        //$(".logout").show();
+        $(".conectado").show();
+        //$(".textoOculto").show();
+    }
+}
+//document.getElementById("conectado").innerHTML = "| Bienvenid@ " + sessionStorage.getItem("user") + " |";
