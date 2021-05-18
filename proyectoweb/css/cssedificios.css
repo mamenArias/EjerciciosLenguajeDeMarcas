@@ -14,51 +14,36 @@ h2 {
     margin-bottom: 10px;
 }
 
+.lado a {
+    text-decoration: none;
+    color: black;
+}
+
+.lado a:hover {
+    color: rgb(255, 86, 19);
+}
+
 .image-wrap {
-    width: 70%;
-    height: auto;
-    margin: 20px;
+    width: 700px;
+    height: 392px;
+    margin: 1% 30% 3% 20%;
     overflow: hidden;
     position: relative;
 }
 
-.image-wrap2 {
-    display: flex;
-    flex-wrap: wrap;
-}
-
 .image-wrap img {
-    width: 70%;
+    width: 700px;
+    height: 392px;
     border: solid;
     border-color: white;
-    margin: 1% 30% 3% 30%;
-    z-index: 1;
-}
-
-.image-wrap2 img {
-    width: 50%;
-    border: solid;
-    border-color: white;
-    margin: 3% 0;
-    z-index: 1;
 }
 
 .image-wrap img:hover {
-    animation: move 10s ease;
-    /* Add infinite to loop. */
-    -ms-animation: move 10s ease;
-    -webkit-animation: move 10s ease;
-    /*-0-animation: move 40s ease;*/
-    -moz-animation: move 10s ease;
-}
-
-.image-wrap2 img:hover {
-    animation: move 10s ease;
-    /* Add infinite to loop. */
-    -ms-animation: move 10s ease;
-    -webkit-animation: move 10s ease;
-    /*-0-animation: move 40s ease;*/
-    -moz-animation: move 10s ease;
+    animation: move 5s ease;
+    -ms-animation: move 5s ease;
+    -webkit-animation: move 5s ease;
+    -animation: move 5s ease;
+    -moz-animation: move 5s ease;
 }
 
 @keyframes move {
@@ -88,5 +73,17 @@ h2 {
         /* Opera */
         -moz-transform: scale(1.2);
         /* Firefox */
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .lado a {
+        font-size: 15px;
+    }
+    .image-wrap,
+    .image-wrap img {
+        width: 100%;
+        height: auto;
+        margin-left: 0;
     }
 }
