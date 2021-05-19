@@ -295,6 +295,9 @@
         .marco {
             grid-template-rows: 193px 0px auto 0px;
         }
+        .darkModeSwitch {
+            display: none;
+        }
         header nav {
             width: 80%;
             height: 100%;

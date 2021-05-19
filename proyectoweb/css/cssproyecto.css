@@ -389,7 +389,7 @@
         margin: 20px 0 20px 30px;
     }
     
-    .fotosboda {
+    .contenedor-fotos {
         display: inline-block;
     }
     
@@ -456,6 +456,57 @@
         height: auto;
     }
     
+    .pesca {
+        float: right;
+        margin-left: 20px;
+        margin-bottom: 15px;
+        width: 50%;
+        height: auto;
+    }
+    
+    .bichos {
+        margin: 0 10px 5px 0;
+        float: left;
+        width: 35%;
+        height: auto;
+    }
+    
+    .cumple1 {
+        margin: 20px 0;
+        float: left;
+        width: 48%;
+        height: auto;
+    }
+    
+    .cumple2 {
+        margin: 20px 0;
+        float: right;
+        width: 48%;
+        height: auto;
+    }
+    
+    .lluvia {
+        float: right;
+        margin-left: 20px;
+        margin-bottom: 15px;
+        width: 50%;
+        height: auto;
+    }
+    
+    .nabos1 {
+        margin: 20px 0;
+        float: left;
+        width: 48%;
+        height: auto;
+    }
+    
+    .nabos2 {
+        margin: 20px 0;
+        float: right;
+        width: 48%;
+        height: auto;
+    }
+    
     @keyframes animacion {
         /*Animación de las imágenes para que aparezcan poco a poco al cargar la página*/
         from {
@@ -478,6 +529,9 @@
         }
         .palabras {
             /*Las palabras del menú lateral desaparecen y sólo quedan los iconos*/
+            display: none;
+        }
+        .darkModeSwitch {
             display: none;
         }
         header nav {
