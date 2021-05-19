@@ -57,6 +57,13 @@ switchButton.addEventListener('click', () => {
     switchButton.classList.toggle('active'); //toggle the HTML button with the id='switch' with the class 'active'
 });
 
+const switchButton2 = document.getElementById('switch2');
+
+switchButton2.addEventListener('click', () => {
+    document.body.classList.toggle('dark'); //toggle the HTML body the class 'dark'
+    switchButton2.classList.toggle('active'); //toggle the HTML button with the id='switch' with the class 'active'
+});
+
 // Ocultamos el botón de desconectar
 /*function ocultar() {
     $(".logout").hide();
