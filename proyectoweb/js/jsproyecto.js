@@ -63,26 +63,3 @@ switchButton2.addEventListener('click', () => {
     document.body.classList.toggle('dark'); //toggle the HTML body the class 'dark'
     switchButton2.classList.toggle('active'); //toggle the HTML button with the id='switch' with the class 'active'
 });
-
-// Ocultamos el botón de desconectar
-/*function ocultar() {
-    $(".logout").hide();
-    $("#conectado").hide();
-    $(".textoOculto").hide();
-<<<<<<< HEAD
-}*/
-
-
-/*function comprobarLogin() {
-
-    if (sessionStorage.getItem('user').length > 0) {
-        $('#loginBoton').css('display', 'none');
-        $('#logout').css('display', 'inline-block');
-        $('.conectado').css('display', 'inline-block');
->>>>>>> parent of 0a4f187 (prueba2)
-    }
-}
-
-window.onload() = function launch() {
-    comprobarLogin();
-}*/
