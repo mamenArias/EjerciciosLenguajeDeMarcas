@@ -251,6 +251,15 @@
                 border-radius: 15px;
             }
             
+            body.dark .botonLogin {
+                background-color: #022935;
+                color: white;
+            }
+            
+            body.dark input {
+                background-color: #8aacb6;
+            }
+            
             .imgInicioSesion {
                 width: 27%;
                 height: auto;
