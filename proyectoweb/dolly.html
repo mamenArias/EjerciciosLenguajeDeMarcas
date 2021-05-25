@@ -26,7 +26,7 @@ Fecha: Junio 2021
     <!-- iconos u otros elementos externos -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
 
-    <!-- scripts externos de librerias que usaremos, por ejemplo Bootstrap o JQuery -->
+    <!-- scripts externos de librerias JQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 </head>
@@ -41,16 +41,18 @@ Fecha: Junio 2021
             </div>
         </header>
 
-        <div class="contenido">
+        <section class="contenido">
+            <!-- Contenido con la imagen que tiene efecto Dolly -->
             <div class="container">
                 <div class="front"><img src="./media/fotos/Dolly/personaje.png" alt="Personaje Animal Crossing" /></div>
                 <div class="background"><img src="./media/fotos/Dolly/fondoisla.jpg" alt="Isla Desierta" /></div>
             </div>
 
+            <!-- Div con el texto que se muestra sólo en móvil, ya que ahí no muestra el efecto de la foto -->
             <div class="oculto">
                 <p>Este efecto de imagen no puede mostrarse en un tamaño de pantalla inferior a <strong>900px</strong>. Lo sentimos, inténtelo en otro dispositivo.</p>
             </div>
-        </div>
+        </section>
     </div>
 
     <script src="./js/jslogin.js"></script>

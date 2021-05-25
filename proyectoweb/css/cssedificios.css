@@ -1,3 +1,9 @@
+/*CSS
+Web o pagina: Proyecto Final 1º DAM
+Autor: Mª Carmen Arias de Haro
+Fecha: Junio 2021
+*/
+
 * {
     margin: 0;
     padding: 0;
@@ -28,6 +34,7 @@ h2 {
     height: 392px;
     margin: 1% 30% 3% 20%;
     overflow: hidden;
+    /*Ocultamos el overflow para cuando realice el efecto */
     position: relative;
 }
 
@@ -39,6 +46,7 @@ h2 {
 }
 
 .image-wrap img:hover {
+    /* Realiza el efecto Ken Burns creado abajo al pasar el ratón sobre la imagen */
     animation: move 5s ease;
     -ms-animation: move 5s ease;
     -webkit-animation: move 5s ease;
@@ -47,6 +55,7 @@ h2 {
 }
 
 @keyframes move {
+    /*Efecto KEN BURNS*/
     0% {
         -webkit-transform-origin: center;
         -moz-transform-origin: center;

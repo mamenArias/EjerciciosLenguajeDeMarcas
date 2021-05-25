@@ -1,3 +1,9 @@
+/*CSS
+Web o pagina: Proyecto Final 1º DAM
+Autor: Mª Carmen Arias de Haro
+Fecha: Junio 2021
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@300&family=New+Tegomin&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
 * {
@@ -28,7 +34,6 @@ body {
     padding-top: 0px;
     padding-bottom: 0px;
     margin: 10px;
-    /*display: inline-block;*/
     position: relative;
     font-size: 20px;
     font-family: 'Londrina Solid', cursive;
@@ -69,6 +74,7 @@ body {
 }
 
 .container {
+    /*Css del contenedor que tiene las dos imágenes del efecto dolly*/
     width: 900px;
     max-width: 1060px;
     background: #000;
@@ -93,6 +99,7 @@ body {
 }
 
 .background {
+    /*Css de la imagen de fondo del efecto*/
     top: 50%;
     left: 50%;
     width: 1411px;
@@ -109,6 +116,7 @@ body {
 }
 
 .front {
+    /*Css de la imagen superior del efecto*/
     top: 30%;
     left: 60%;
     z-index: 1;

@@ -26,7 +26,7 @@ Fecha: Junio 2021
     <!-- iconos u otros elementos externos -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
 
-    <!-- scripts externos de librerias que usaremos, por ejemplo Bootstrap o JQuery -->
+    <!-- scripts externos de librerias JQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 </head>
@@ -35,6 +35,7 @@ Fecha: Junio 2021
     <div class="marco">
         <header class="encabezado">
             <div id="logo">
+                <!-- Botón para el modo noche -->
                 <button class="darkModeSwitch" id="switch">
                     <span><i class="fa fa-sun-o"></i></span>   
                     <span><i class="fa fa-moon-o"></i></span></button>
@@ -65,7 +66,7 @@ Fecha: Junio 2021
             </nav>
 
             <!--Menú normal de la página-->
-            <div aria-label class="menu">
+            <nav aria-label class="menu">
                 <a href="index.html">Inicio</a>
                 <a href="eventos.html">Eventos</a>
                 <a href="personajes.html">Personajes</a>
@@ -74,21 +75,12 @@ Fecha: Junio 2021
                 <a class="activo" class="loginBoton" id="loginBoton" href="login.html">Zona Privada</a>
                 <p class="conectado" id="conectado"></p>
                 <a class="logout" id="logout" onclick="cerrarSesion()">Desconectar</a>
-                <!--<ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="eventos.html">Eventos</a></li>
-                    <li><a href="personajes.html">Personajes</a></li>
-                    <li><a href="edificios.html">Edificios</a></li>
-                    <li id="loginOculto"><a class="activo loginBoton" id="loginBoton" href="login.html">Zona Privada</a></li>
-                    <div id="conectado" class="textoConectado"></div>
-                    <li><a class="logout" id="logout" onclick="cerrarSesion()"><em class="fa fa-sign-out" alt="Desconectar"></em></a></li>
 
-                </ul>-->
-            </div>
+            </nav>
         </header>
 
 
-        <div class="contenido">
+        <section class="contenido">
 
             <!--Formulario del Login-->
             <form id="login" class="login">
@@ -103,10 +95,11 @@ Fecha: Junio 2021
 
             <!--Contenido oculto que sólo se muestra cuando el Login es correcto-->
             <p id="textoOculto" class="textoOculto"> ¡Bienvenido a la sección secreta!</p>
-        </div>
+        </section>
 
     </div>
 
+    <!-- Se agregan los Javascript que vamos a usar en cada página -->
     <script src="./js/jsproyecto.js"></script>
     <script src="./js/jslogin.js"></script>
 

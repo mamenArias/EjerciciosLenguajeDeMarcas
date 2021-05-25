@@ -22,7 +22,7 @@ Fecha: Junio 2021
     <!-- iconos u otros elementos externos -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
 
-    <!-- scripts externos de librerias que usaremos, por ejemplo Bootstrap o JQuery -->
+    <!-- scripts externos de librerias JQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://datoweb.com/visor/js/fresco/fresco.js"></script>
     <link rel="stylesheet" type="text/css" href="https://datoweb.com/visor/css/fresco/fresco.css" />
@@ -44,15 +44,6 @@ Fecha: Junio 2021
                 <a href="#" class="bt-menu"><span class="icon-menu"></span></a>
             </div>
 
-            <!--<div aria-label class="menuResponsive">
-                <a href="index.html">Inicio</a>
-                <a class="activo" href="eventos.html">Eventos</a>
-                <a href="personajes.html">Personajes</a>
-                <a href="edificios.html">Edificios</a>
-                <a class="loginBoton" id="loginBoton" href="login.html">Zona Privada</a>
-                <a class="conectado" id="conectado" href=""></a>
-                <a class="logout" id="logout" onclick="cerrarSesion()">Desconectar</a>
-            </div>-->
             <nav aria-label class="menuResponsive">
                 <ul>
                     <li><a href="index.html">Inicio</a></li>
@@ -69,7 +60,7 @@ Fecha: Junio 2021
                 </ul>
             </nav>
 
-            <div aria-label class="menu">
+            <nav aria-label class="menu">
                 <a href="index.html">Inicio</a>
                 <a class="activo" href="eventos.html">Eventos</a>
                 <a href="personajes.html">Personajes</a>
@@ -78,20 +69,11 @@ Fecha: Junio 2021
                 <a class="loginBoton" id="loginBoton" href="login.html">Zona Privada</a>
                 <p class="conectado" id="conectado"></p>
                 <a class="logout" id="logout" onclick="cerrarSesion()">Desconectar</a>
-                <!--<ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="eventos.html">Eventos</a></li>
-                    <li><a href="personajes.html">Personajes</a></li>
-                    <li><a href="edificios.html">Edificios</a></li>
-                    <li id="loginOculto"><a class="activo loginBoton" id="loginBoton" href="login.html">Zona Privada</a></li>
-                    <div id="conectado" class="textoConectado"></div>
-                    <li><a class="logout" id="logout" onclick="cerrarSesion()"><em class="fa fa-sign-out" alt="Desconectar"></em></a></li>
-
-                </ul>-->
-            </div>
+            </nav>
         </header>
 
-        <div class="lado">
+        <!-- Menú lateral con el acceso rápido a los eventos mostrados en el contenido de la página-->
+        <section class="lado">
             <button class="botonDesplegable"><img class="icono" src="./media/iconos/primavera.png" alt="Icono"> <span class="palabras">Primavera</span>
                 <i class="fa fa-caret-down"></i>
               </button>
@@ -135,10 +117,10 @@ Fecha: Junio 2021
                 <a href="#lluvia">Lluvia de Estrellas</a>
                 <a href="#nabos">Nabos</a>
             </div>
-        </div>
+        </section>
 
-        <div class="contenido">
-
+        <section class="contenido">
+            <!-- Contenido de todos los eventos presentes en el juego -->
             <a id="verimagenes" class='fresco' data-fresco-group='grupo'></a>
             <h2 id="cerezo"><img class="icono" src="./media/iconos/primavera.png" alt="Icono"> Cerezo en flor:</h2><br>
             <p><strong>Fecha:</strong> 1 - 10 de abril.</p><br>
@@ -544,11 +526,11 @@ Fecha: Junio 2021
                     <img class="nabos2 grande imagenResponsive" src="./media/fotos/Especiales/nabos.jpeg" alt="Colección de nabos">
                 </div>
             </div><br>
-
-        </div>
+        </section>
 
     </div>
 
+    <!-- Se agregan los Javascript que vamos a usar en cada página -->
     <script src="./js/jsproyecto.js"></script>
     <script src="./js/jslogin.js"></script>
 
