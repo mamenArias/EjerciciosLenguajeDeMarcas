@@ -94,6 +94,7 @@ window.onload = function() {
 function comprobarLogin() {
     if (sessionStorage.getItem("user").length > 0) {
         //$(".loginBoton").hide();
+        $(".login").hide();
         $(".logout").show();
         $("#conectado").show();
         $(".oculto").show();
