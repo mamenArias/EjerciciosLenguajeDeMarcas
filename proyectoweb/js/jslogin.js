@@ -1,3 +1,4 @@
+/*Esta función nos va a borrar el usuario que se haya registrado, para desconectar la sesión y recargará la página*/
 function cerrarSesion() {
     if (typeof(Storage) !== "undefined") {
         if (confirm("¿Desea Cerrar Sesión?")) {
@@ -14,9 +15,8 @@ function cerrarSesion() {
     return false;
 }
 
+/*Esta función va a leer el XML, y luego llamará a miFuncion*/
 function leerXML() {
-
-
     var xhr = new XMLHttpRequest();
     xhr.onreadystatechange = function() {
 
@@ -29,7 +29,8 @@ function leerXML() {
 
 }
 
-
+/*Con esta función se va a comprobar que el usuario y la clave introducidas desde el form del login coincidan con el nombre y la clave de los datos existentes
+en el XML. Si es así, se van a almacenar estos datos en sessionStorage.*/
 function miFuncion(xml) {
 
     var i;
@@ -58,7 +59,8 @@ function miFuncion(xml) {
             }
         }
     }
-
+    /*Si el usuario y la contraseña son correctos, aparecerá un alert indicándolo y se mostrarán todo lo que está oculto.
+    Si no es correcto, aparecerá otro alert indicando que algunos de los dos campos se han introducido incorrectamente.*/
     if (loginAceptado == true) {
         window.alert("Bienvenid@ " + nombre);
         $(".loginBoton").hide();
@@ -78,7 +80,7 @@ function miFuncion(xml) {
 }
 
 
-
+/*Al cargar la pantalla, el botón de desconectar y las cosas ocultas no se van a mostrar, hasta que se loguee el usuario correctamente.*/
 window.onload = function() {
     $(".loginBoton").show();
     $(".logout").hide();
@@ -88,12 +90,13 @@ window.onload = function() {
     comprobarLogin();
 }
 
+/*Esta función va a comprobar si hay algún usuario cada vez que se cargue una página*/
 function comprobarLogin() {
     if (sessionStorage.getItem("user").length > 0) {
-        //$(".loginBoton").hide();
-        //$(".logout").show();
+        $(".loginBoton").hide();
+        $(".logout").show();
         $(".conectado").show();
-        //$(".oculto").show();
+        $(".oculto").show();
     }
 }
 //document.getElementById("conectado").innerHTML = "| Bienvenid@ " + sessionStorage.getItem("user") + " |";

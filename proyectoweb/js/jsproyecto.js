@@ -1,7 +1,8 @@
 $(document).ready(main);
 //Animación menú responsive
 var contador = 1;
-
+/* Nos va a establecer un contador a 1. Cuando hagamos click en el botón del menú responsive, va comprobar que este contador esté a 1, y va a hacer que el
+menú aparezca desde la izquierda, poniendo además el contador a 0. Entonces, al volver a darle al botón, ocultará el menú por fuera del viewport de la pantalla.*/
 function main() {
     $('.menu_bar').click(function() {
         //$('.menuResponsive').toggle();
@@ -20,7 +21,8 @@ function main() {
     });
 }
 
-//Botón del menú lateral
+/*Botón del menú lateral:
+Nos va a mostrar el menú lateral que tenemos por defecto como display:none cuando le demos al elemento botonDesplegable.*/
 var dropdown = document.getElementsByClassName("botonDesplegable");
 var i;
 
@@ -53,13 +55,13 @@ $(document).ready(function() {
 const switchButton = document.getElementById('switch');
 
 switchButton.addEventListener('click', () => {
-    document.body.classList.toggle('dark'); //toggle the HTML body the class 'dark'
-    switchButton.classList.toggle('active'); //toggle the HTML button with the id='switch' with the class 'active'
+    document.body.classList.toggle('dark'); //convierte el HTML con la clase "dark"
+    switchButton.classList.toggle('active'); //convierte el botón del html que aplica el modo oscuro con la clase "active"
 });
 
 const switchButton2 = document.getElementById('switch2');
 
 switchButton2.addEventListener('click', () => {
-    document.body.classList.toggle('dark'); //toggle the HTML body the class 'dark'
-    switchButton2.classList.toggle('active'); //toggle the HTML button with the id='switch' with the class 'active'
+    document.body.classList.toggle('dark');
+    switchButton2.classList.toggle('active');
 });
