@@ -1,13 +1,13 @@
 window.onload = function comprobarLogin() {
     if (sessionStorage.getItem("user").length > 0) {
         //$(".loginBoton").hide();
-        $(".loginBoton").css('display', 'none');
+        $("#loginBoton").css('display', 'inline-block');
         //$(".logout").show();
-        $(".logout").css('display', 'inline-block');
+        $("#logout").css('display', 'inline-block');
         //$(".conectado").show();
-        $(".conectado").css('display', 'inline-block');
+        $("#conectado").css('display', 'inline-block');
         //$(".textoOculto").show();
-        $(".textoOculto").css('display', 'inline-block');
+        $("#textoOculto").css('display', 'inline-block');
     }
 }
 document.getElementById("conectado").innerHTML = "| Bienvenid@ " + sessionStorage.getItem("user") + " |";
@@ -76,16 +76,16 @@ function miFuncion(xml) {
     if (loginAceptado == true) {
         window.alert("Bienvenid@ " + nombre);
         //$(".loginBoton").hide();
-        $(".loginBoton").css('display', 'none');
+        //$(".loginBoton").css('display', 'none');
         //$(".login").hide();
-        $(".login").css('display', 'none');
+        $("#login").css('display', 'none');
         //$(".logout").show();
-        $(".logout").css('display', 'inline-block');
+        $("#logout").css('display', 'inline-block');
         //document.getElementById("conectado").innerHTML = "| Bienvenid@ " + sessionStorage.getItem("user") + " |";
         //$(".conectado").show();
-        $(".conectado").css('display', 'inline-block');
+        $("#conectado").css('display', 'inline-block');
         //$(".textoOculto").show();
-        $(".textoOculto").css('display', 'block');
+        $("#textoOculto").css('display', 'block');
         //location.reload();
         //window.history.go(-1);
 

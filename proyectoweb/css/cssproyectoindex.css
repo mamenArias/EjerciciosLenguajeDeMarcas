@@ -137,13 +137,13 @@ Fecha: Junio 2021*/
                 font-size: 20px;
             }
             
-            .loginBoton {
+            #loginBoton {
                 display: inline-block;
             }
             
-            .logout,
-            .conectado,
-            .textoOculto {
+            #logout,
+            #conectado,
+            #textoOculto {
                 display: none;
             }
             
