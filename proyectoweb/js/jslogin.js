@@ -1,3 +1,17 @@
+window.onload = function comprobarLogin() {
+    if (sessionStorage.getItem("user").length > 0) {
+        //$(".loginBoton").hide();
+        $(".loginBoton").css('display', 'none');
+        //$(".logout").show();
+        $(".logout").css('display', 'inline-block');
+        //$(".conectado").show();
+        $(".conectado").css('display', 'inline-block');
+        //$(".textoOculto").show();
+        $(".textoOculto").css('display', 'inline-block');
+    }
+}
+document.getElementById("conectado").innerHTML = "| Bienvenid@ " + sessionStorage.getItem("user") + " |";
+
 function cerrarSesion() {
     if (typeof(Storage) !== "undefined") {
         if (confirm("¿Desea Cerrar Sesión?")) {
@@ -84,7 +98,7 @@ function miFuncion(xml) {
 
 
 
-window.onload = function() {
+/*window.onload = function() {
     //$(".loginBoton").show();
     $(".loginBoton").css("display", "inline-block");
     //$(".logout").hide();
@@ -95,18 +109,4 @@ window.onload = function() {
     $(".textoOculto").css('display', 'none');
 
     comprobarLogin();
-}
-
-function comprobarLogin() {
-    if (sessionStorage.getItem("user").length > 0) {
-        //$(".loginBoton").hide();
-        $(".loginBoton").css('display', 'none');
-        //$(".logout").show();
-        $(".logout").css('display', 'inline-block');
-        //$(".conectado").show();
-        $(".conectado").css('display', 'inline-block');
-        //$(".textoOculto").show();
-        $(".textoOculto").css('display', 'inline-block');
-    }
-}
-document.getElementById("conectado").innerHTML = "| Bienvenid@ " + sessionStorage.getItem("user") + " |";
+}*/
