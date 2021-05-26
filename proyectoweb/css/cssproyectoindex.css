@@ -148,6 +148,13 @@ Fecha: Junio 2021*/
                 height: 315px;
             }
             
+            .oculto {
+                text-align: center;
+                font-family: 'Acme', sans-serif;
+                font-size: 25px;
+                font-weight: bold;
+            }
+            
             #conectado {
                 /*CSS del nombre cuando se conecta el usuario*/
                 color: blue;
@@ -165,8 +172,7 @@ Fecha: Junio 2021*/
                 border-radius: 10px;
             }
             
-            #login,
-            .oculto {
+            #login {
                 text-align: center;
                 font-family: 'Acme', sans-serif;
                 font-size: 18px;
