@@ -143,9 +143,11 @@ Fecha: Junio 2021*/
                 margin: 10px 5% 10px 5%;
             }
             
-            .videos {
+            .videoOculto {
+                margin: 2% 5% 2% 3%;
                 width: 560px;
                 height: 315px;
+                box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.45);
             }
             
             .oculto {
@@ -649,6 +651,10 @@ Fecha: Junio 2021*/
                 .video {
                     width: 100%;
                     height: 58%;
+                }
+                .videoOculto {
+                    width: 100%;
+                    height: auto;
                 }
                 .boton {
                     margin: 0% 30%;
