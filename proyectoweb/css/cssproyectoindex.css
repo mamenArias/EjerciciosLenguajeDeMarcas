@@ -137,16 +137,6 @@ Fecha: Junio 2021*/
                 font-size: 20px;
             }
             
-            #loginBoton {
-                display: inline-block;
-            }
-            
-            #logout,
-            #conectado,
-            #textoOculto {
-                display: none;
-            }
-            
             #conectado {
                 /*CSS del nombre cuando se conecta el usuario*/
                 color: blue;

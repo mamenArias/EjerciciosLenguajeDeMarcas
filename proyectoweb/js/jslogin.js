@@ -1,17 +1,3 @@
-window.onload = function comprobarLogin() {
-    if (sessionStorage.getItem("user").length > 0) {
-        //$(".loginBoton").hide();
-        $("#loginBoton").css('display', 'inline-block');
-        //$(".logout").show();
-        $("#logout").css('display', 'inline-block');
-        //$(".conectado").show();
-        $("#conectado").css('display', 'inline-block');
-        //$(".textoOculto").show();
-        $("#textoOculto").css('display', 'inline-block');
-    }
-}
-document.getElementById("conectado").innerHTML = "| Bienvenid@ " + sessionStorage.getItem("user") + " |";
-
 function cerrarSesion() {
     if (typeof(Storage) !== "undefined") {
         if (confirm("¿Desea Cerrar Sesión?")) {
@@ -75,17 +61,12 @@ function miFuncion(xml) {
 
     if (loginAceptado == true) {
         window.alert("Bienvenid@ " + nombre);
-        //$(".loginBoton").hide();
-        //$(".loginBoton").css('display', 'none');
-        //$(".login").hide();
-        $("#login").css('display', 'none');
-        //$(".logout").show();
-        $("#logout").css('display', 'inline-block');
-        //document.getElementById("conectado").innerHTML = "| Bienvenid@ " + sessionStorage.getItem("user") + " |";
-        //$(".conectado").show();
-        $("#conectado").css('display', 'inline-block');
-        //$(".textoOculto").show();
-        $("#textoOculto").css('display', 'block');
+        $(".loginBoton").hide();
+        $(".login").hide();
+        $(".logout").show();
+        document.getElementById("conectado").innerHTML = "| Bienvenid@ " + sessionStorage.getItem("user") + " |";
+        $(".conectado").show();
+        $(".textoOculto").show();
         //location.reload();
         //window.history.go(-1);
 
@@ -98,15 +79,21 @@ function miFuncion(xml) {
 
 
 
-/*window.onload = function() {
-    //$(".loginBoton").show();
-    $(".loginBoton").css("display", "inline-block");
-    //$(".logout").hide();
-    $(".logout").css('display', 'none');
-    //$(".conectado").hide();
-    $(".conectado").css('display', 'none');
-    //$(".textoOculto").hide();
-    $(".textoOculto").css('display', 'none');
+window.onload = function() {
+    $(".loginBoton").show();
+    $(".logout").hide();
+    $(".conectado").hide();
+    $(".textoOculto").hide();
 
     comprobarLogin();
-}*/
+}
+
+function comprobarLogin() {
+    if (sessionStorage.getItem("user").length > 0) {
+        //$(".loginBoton").hide();
+        //$(".logout").show();
+        $(".conectado").show();
+        //$(".textoOculto").show();
+    }
+}
+//document.getElementById("conectado").innerHTML = "| Bienvenid@ " + sessionStorage.getItem("user") + " |";
