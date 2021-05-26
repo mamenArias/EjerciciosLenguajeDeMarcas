@@ -66,7 +66,7 @@ function miFuncion(xml) {
         $(".logout").show();
         document.getElementById("conectado").innerHTML = "| Bienvenid@ " + sessionStorage.getItem("user") + " |";
         $(".conectado").show();
-        $(".textoOculto").show();
+        $(".oculto").show();
         //location.reload();
         //window.history.go(-1);
 
@@ -83,7 +83,7 @@ window.onload = function() {
     $(".loginBoton").show();
     $(".logout").hide();
     $(".conectado").hide();
-    $(".textoOculto").hide();
+    $(".oculto").hide();
 
     comprobarLogin();
 }
@@ -93,7 +93,7 @@ function comprobarLogin() {
         //$(".loginBoton").hide();
         //$(".logout").show();
         $(".conectado").show();
-        //$(".textoOculto").show();
+        //$(".oculto").show();
     }
 }
 //document.getElementById("conectado").innerHTML = "| Bienvenid@ " + sessionStorage.getItem("user") + " |";

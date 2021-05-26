@@ -137,6 +137,17 @@ Fecha: Junio 2021*/
                 font-size: 20px;
             }
             
+            .contenedorVideos {
+                display: flex;
+                flex-wrap: wrap;
+                margin: 10px 5% 10px 5%;
+            }
+            
+            .videos {
+                width: 560px;
+                height: 315px;
+            }
+            
             #conectado {
                 /*CSS del nombre cuando se conecta el usuario*/
                 color: blue;
@@ -154,7 +165,8 @@ Fecha: Junio 2021*/
                 border-radius: 10px;
             }
             
-            #login {
+            #login,
+            .oculto {
                 text-align: center;
                 font-family: 'Acme', sans-serif;
                 font-size: 18px;
@@ -368,6 +380,8 @@ Fecha: Junio 2021*/
                 float: left;
                 width: 40%;
                 height: auto;
+                border: solid;
+                border-color: white;
             }
             
             .multijugador2 {
@@ -375,6 +389,8 @@ Fecha: Junio 2021*/
                 width: 40%;
                 float: right;
                 height: auto;
+                border: solid;
+                border-color: white;
             }
             
             .menu_bar,
