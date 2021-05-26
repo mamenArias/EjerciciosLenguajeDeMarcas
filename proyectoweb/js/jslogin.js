@@ -93,9 +93,9 @@ window.onload = function() {
 /*Esta función va a comprobar si hay algún usuario cada vez que se cargue una página*/
 function comprobarLogin() {
     if (sessionStorage.getItem("user").length > 0) {
-        $(".loginBoton").hide();
+        //$(".loginBoton").hide();
         $(".logout").show();
-        $(".conectado").show();
+        $("#conectado").show();
         $(".oculto").show();
     }
 }
