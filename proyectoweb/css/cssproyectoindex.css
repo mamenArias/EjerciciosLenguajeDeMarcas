@@ -155,6 +155,7 @@ Fecha: Junio 2021*/
                 font-family: 'Acme', sans-serif;
                 font-size: 25px;
                 font-weight: bold;
+                color: rgb(255, 86, 19);
             }
             
             #conectado {
@@ -206,8 +207,7 @@ Fecha: Junio 2021*/
             .imgInicioSesion {
                 width: 27%;
                 height: auto;
-                margin-left: 36%;
-                margin-top: 2%;
+                margin: 2% 0 2% 36%;
             }
             
             .separador {
@@ -711,5 +711,8 @@ Fecha: Junio 2021*/
                 .darkModeSwitchResponsive.active::after {
                     left: unset;
                     right: 0;
+                }
+                body.dark .contenido {
+                    border-color: #022935;
                 }
             }

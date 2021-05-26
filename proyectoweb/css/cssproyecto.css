@@ -146,7 +146,7 @@
    
    .lado .menuDesplegable a {
        padding: 0;
-       margin-left: 2px;
+       margin-left: 8px;
        border-radius: 10px;
        background-color: rgb(253, 181, 122);
        color: black;
@@ -160,6 +160,7 @@
    }
    
    .menuDesplegable {
+       /*De esta forma el menú desplegable lateral, por defecto estará oculto, y aparecerá cuando le demos a botonDesplegable*/
        display: none;
    }
    
@@ -513,6 +514,10 @@
        color: white;
    }
    
+   body.dark #conectado {
+       color: #3494b1;
+   }
+   
    @keyframes animacion {
        /*Animación de las imágenes para que aparezcan poco a poco al cargar la página*/
        from {
@@ -627,7 +632,7 @@
            margin: 0 0 20px 0;
        }
        .menuDesplegable {
-           padding-left: 8px;
+           padding-left: 0px;
        }
        .menuDesplegable a {
            font-size: small;
